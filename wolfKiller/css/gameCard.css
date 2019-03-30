@@ -1,0 +1,121 @@
+.all{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header{
+	width: 100%;
+	height: 1.33333333rem;
+	background: #555;
+	margin-bottom: 15px !important;
+	padding: 0  .53333333rem 0  .66666667rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	}
+header a{
+	height: 100%;
+	width: 1.33333333rem;
+	text-align: center;
+	line-height: 1.3333333333rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: .8rem;
+	cursor:pointer;
+	color: black;
+	color: #fff;
+}
+header span{
+	font-size: .48rem;
+	line-height: 1.3333333333rem;
+	width: 8rem;
+	text-align: center;
+}
+#number{
+	width: 2.13333333rem;
+	height: 2.13333333rem;
+	line-height: 2.13333333rem;
+	border-radius: 100%;
+	margin-bottom: .53333333rem;
+	font-size: .8rem;
+	border: 1px solid #000;
+}
+#content{
+	width: 100%;
+	height: 9.6rem;
+}
+#Card{
+	position: relative;
+}
+#card{
+	width: 6.66666667rem;
+	height: 9.6rem;
+	margin-bottom: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -125px;
+}
+#card.active{
+	transform: rotateY(180deg);
+	
+}
+#card.position{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -3.33333333rem;
+	transform-style: preserve-3d;
+	
+	
+}
+.bbb{
+	transform: rotateY(180deg);
+}
+#card.positionTwo{
+	transform: rotateY(180deg);
+}
+img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.aaa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+}
+p{
+	width: 100%;
+	height: 1.06666667rem;
+	margin-top: 10px !important;
+	position: relative;
+}
+p>button{
+	margin: 0 !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px !important;
+	margin-left: -50px !important;
+}
+button{
+	margin-top: 10px !important;
+	width: 2.66666667rem;
+	height: 30px;
+	line-height: .8rem;
+	border: 1px solid rgb(210,210,210);
+	background: rgb(235,235,235); 
+	
+}

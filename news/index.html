@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>新闻发布</title>
+	<script src="js/jquery.js"></script>
+</head>
+<style type="text/css">
+#form{
+	width: 600px;
+	margin: 0 auto;
+	height: 800px;
+}
+	h2,h3{
+		font-weight: 400;
+		margin: 0;
+	}
+	h3{
+		line-height: 35px;
+	}
+	h4{
+		font-weight: 400;
+		margin: 0;
+		width:40% ;
+		height: 100%;
+		line-height: 35px;
+	}
+	.small{
+		height: 35px;
+		margin: 20px 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.data{
+		width: 240px;
+	}
+	input{
+		text-align: center;
+		font-size: 18px;
+		line-height: 35px;
+		width: 60%;
+		line-height: 35px;
+		outline: none;
+		margin: 0;
+		padding: 0;
+		border: 1px solid #bbb;
+	}
+	.author{
+		width: 240px;
+		display: flex;
+		
+		height: 50px;
+	}
+	#title{
+		font-size: 18px;
+		width: 180px;
+	}
+	#name{
+		width: 120px;
+		font-size: 14px;
+	}
+	.check{
+		width: 30px;
+	}
+	textarea{
+		width: 600px;
+		height: 350px;
+	}
+	footer{
+		display: flex;
+		margin-top: 20px;
+		align-items: center;
+	}
+	footer>input:nth-child(3),footer>input:nth-child(4){
+		width: 80px;
+		height: 30px;
+		outline: none;
+		margin: 0;
+		padding: 0;
+		border: 1px solid #b0b0b0;
+		margin-left:60px;
+	}
+	#result{
+		width: 160px;
+		height: 50px;
+		font-weight: 700;
+		font-style: normal;
+		line-height: 50px;
+		text-align: center;
+	}
+</style>
+<body>
+	<form action="wx.php" id="form" method="post">
+	<h2>新闻发布</h2>
+	<div class="small">
+		<h3>标题：</h3><input type="text" name="title" id="title">
+		
+	</div>
+	<div>
+		<input type="checkbox" name="classify[]"  value="军事新闻" class="check" >军事新闻
+		<input type="checkbox" name="classify[]"  value="国际新闻" class="check">国际新闻
+		<input type="checkbox" name="classify[]"  value="国内新闻" class="check">国内新闻
+		<input type="checkbox" name="classify[]"  value="娱乐新闻" class="check">娱乐新闻
+		<input type="checkbox" name="classify[]"  value="科技新闻" class="check">科技新闻
+	</div>
+	<div class="small data">
+		<h4>发布时间：</h4><input type="text" name="data" id="data">
+	</div>
+	<textarea name="content" id="content"></textarea>
+	<footer>
+	<div class="author">
+	    <h4>发布人：</h4><input type="text" name="name" id="name">
+	</div>
+	<em id="result"></em>
+	<input type="submit" name="submit" id="send" value="发布">
+	<input type="button" name="submit" id="check" value="查看">
+</footer>
+</form>
+
+
+	<script>
+
+
+		$('#form').on('submit',function (e) {
+			// e.preventDefault();
+			$.post($('#form').attr('action'),function () {
+				$('#result').html('发布成功');
+			})
+		});
+
+		$('#check').on('click',function () {
+			location.href = 'list.html';
+		})
+
+
+
+	</script>
+</body>
+</html>

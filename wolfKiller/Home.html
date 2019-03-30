@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" href="css/Home.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="all" id="all">
+		
+	
+	<div class="header">
+		<i id="play"></i>
+		<h1>天上人间</h1>
+		<em id="music">
+			
+			<img src="img/声音.png" alt="" class="sound1">
+			<img src="img/关闭声音.png" alt="" class ="sound2">
+			<audio src="img/Elliott Yamin - Wait For You.mp3" id="audio"></audio>
+		</em>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<img src="img/wolf1.jpg" alt="" class="swiper-slide">
+			<img src="img/wolf2.jpg" alt="" class="swiper-slide">
+			<img src="img/wolf3.jpg" alt="" class="swiper-slide">
+		</div>
+	</div>
+
+	<ul>
+		<li><i>用户名</i><input type="text" name="" id="text"></li>
+		<li><i>密码</i><input type="password" name="" id="password"></li>
+		<li>
+			<button id="login">登录</button>
+		    <button id="register">注册</button>
+		    <button id="forget">忘记密码</button> 
+		</li>
+	</ul>
+ 
+</div>
+</body>
+<script src="js/home.js"></script>
+<script src="js/swiper.min.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+</html>

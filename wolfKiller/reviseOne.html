@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>修改密码</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" href="css/reviseOne.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="all">
+		<header id="header">
+			<a href="Home.html"> < </a>
+			<h1>修改密码</h1>
+		</header><!-- /header -->
+
+		<section id="section">
+			<p><i>用户名 : </i><input type="text" name="" id="input"></p>
+			<button type="button" id="button">下一步</button>
+		</section>
+	</div>
+	
+</body>
+<script type="text/javascript" charset="utf-8" async defer>
+	var getOne = document.getElementById('input');
+	var next = document.getElementById('button');
+	next.onclick = function() {
+		var storage=window.localStorage;
+		var name=getOne.value;//获取值
+		// var Pwd=password.value;//获取值
+		var username=storage.getItem("username");//从localStorage读取相应键名的值
+		// var pwd=storage.getItem("password");
+		if(name != username || name.length == 0){
+		   	alert('请输入正确用户名')
+		   }
+		   else{
+		   	location.href = 'reviseTwo.html';
+		   }
+	}
+</script>
+</html>

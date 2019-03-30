@@ -1,0 +1,129 @@
+.all{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: .45333333rem;
+}
+header{
+	width: 100%;
+	height: 1.33333333rem;
+	background: #555;
+	margin-bottom: 15px !important;
+	padding: 0  .53333333rem 0  .66666667rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	}
+header a{
+	height: 100%;
+	width: 1.33333333rem;
+	text-align: center;
+	line-height: 1.3333333333rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: .8rem;
+	cursor:pointer;
+	color: black;
+	color: #fff;
+}
+header span{
+	font-size: .48rem;
+	line-height: 1.3333333333rem;
+	width: 8rem;
+	text-align: center;
+}
+section{
+	height: auto;
+}
+#day{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#day i{
+	font-style: normal;
+	display: inline-block;
+	width: 105px;
+	height: 20px;
+	text-align: left;
+	padding-left: 10px;
+}
+.aa{
+	transform: rotateZ(-90deg);
+}
+#day >span:nth-child(1){
+	display: flex;
+	align-items: center;
+	width: 280px;
+	height: 50px;
+	border: 1px solid rgb(208,208,208);
+	border-radius: 5px;
+	z-index: 10;
+	background: #fff;
+	margin-bottom: 15px;
+}
+img{
+	height: 100%;
+}
+#big{
+	width: 100%;
+	height: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#tian{
+	line-height: 50px;
+	width: 177px;
+	text-align: left;
+}
+#morning i,#midnight i{
+	width: 75px;
+
+}
+#morning,#midnight{
+	width: 200px;
+	height: auto;
+	overflow: hidden;
+	line-height: 40px;
+	overflow: hidden;
+	border-radius: 5px;
+	background: #fff;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#morning{
+	margin: 0;
+}
+#smallone,#smalltwo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#morning span,#midnight span{
+	width: 100px;
+	line-height: 30px;
+	margin: 5px 0 !important;
+	border: 1px solid rgb(208,208,208);
+	border-radius: 5px;
+}
+#morning p,#midnight p{
+	width: 99%;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgb(208,208,208);
+	margin-bottom: 10px;
+}
+button{
+	width: 150px;
+	line-height: 30px;
+	border: 1px solid rgb(208,208,208);
+	background: gray;
+}

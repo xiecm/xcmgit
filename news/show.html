@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        .all{
+            width: 1300px;
+            height: 100%;
+            margin: 60px auto 0;
+        }
+        h2{
+            width: 1000px;
+            text-align: center;
+            font-weight: 400;
+            margin: 0 auto;
+        }
+        p{
+            width: 800px;
+            text-align: center;
+            margin: 20px auto;
+            font-size: 14px;
+            color: dimgray;
+        }
+        span{
+            display: inline-block;
+            margin: 0 15px;
+        }
+        section{
+            width: 950px;
+            text-indent: 2em;
+            line-height: 25px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="all">
+    <h2></h2>
+    <p></p>
+    <section></section>
+</div>
+
+
+<script>
+
+    $.get('sele.php',function(text){
+
+        var json;
+        if(typeof text === 'string'){
+            json = $.parseJSON(text);
+        }else if(typeof text === 'object'){
+            json = text;
+        }
+
+        let a = location.search.replace(/[^\d]/g,'');
+        var b = a - 1;
+
+        $('h2').html(json[b].title);
+        $('p').html("<span>发布时间 ："+json[b].data+'</span>'+"<span>作者 ："+json[b].name+'</span>'+"<span>类型 ："+json[b].classify+'</span>');
+        $('section').html(json[b].content);
+    });
+
+</script>
+</body>
+</html>

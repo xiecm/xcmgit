@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        a{
+            font-weight: 700;
+            height: 30px;
+            width: 300px;
+            line-height: 30px;
+
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            text-align: center;
+            letter-spacing: 5px;
+            display: block;
+            text-decoration: none;
+            color: mediumvioletred;
+        }
+        li{
+            margin-top: 15px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        span{
+            display: inline-block;
+            text-align: right;
+            margin-right: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<ol></ol>
+
+<script>
+
+    $.get('sele.php',function(text){
+
+        var json;
+        if(typeof text === 'string'){
+            json = $.parseJSON(text);
+        }else if(typeof text === 'object'){
+            json = text;
+        }
+
+
+        console.log(json);
+        $.each(json,function(index,value){
+            $('ol').append('<li><a href="show.html?id='+value.id+'">'+value.title+'</a><span>作者：'+value.name+'</span><span>发布日期：'+value.data+'</span></li>');
+
+        })
+    })
+        let a = location.search.replace(/[^\d]/g,'');
+        console.log(a);
+
+
+</script>
+</body>
+</html>

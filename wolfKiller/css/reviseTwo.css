@@ -1,0 +1,71 @@
+.all{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+#header{
+	width: 100%;
+	height: 1.33333333rem;
+	background: #555;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	color: #fff;
+}
+#header a{
+	height: 100%;
+	width: 1.33333333rem;
+	text-align: center;
+	line-height: 1.3333333333rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: .8rem;
+	cursor:pointer;
+	color: #fff;
+}
+h1{
+	font-weight: 400;
+	font-size: .48rem !important;
+	width: 8rem;
+	text-align: center;
+}
+i{
+	font-size: .48rem;
+	font-style: normal;
+}
+section{
+	height: 9.33333333rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+p{
+	width: 8rem;
+	display: flex;
+	justify-content: space-between;
+}
+.pp{
+	height: 4rem;
+	justify-content: space-around;
+	align-items: center;
+}
+#input{
+	border: none;
+	text-align: center;
+}
+button{
+	width: 1.6rem;
+	height: .8rem;
+	line-height: .8rem;
+	cursor: pointer;
+	border: .02666667rem solid rgb(245,245,245);
+	background: rgb(230,230,230);
+}
+input{
+	width: 5.33333333rem;
+	line-height: .8rem;
+	border: .02666667rem solid #b0b0b0;
+	font-size: 16px !important;
+}

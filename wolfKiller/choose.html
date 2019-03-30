@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>警徽选择</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/wolfs.css">
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+		<div id="all">
+		<header>
+			<a href="gameStart.html"> < </a>
+			<span>警徽选择</span>
+		</header>
+		<div id="cards">
+			
+		</div>
+         <div class="button">
+     	<button type="button">确定</button>
+		<button type="button">返回</button>
+   </div>
+		
+	</div>
+	<script>
+
+
+var all = document.getElementById('all');
+var cards = document.getElementById('cards');
+var buttons = document.getElementsByTagName('button');
+var arr = [];
+var img1,img2;
+
+var storage=window.localStorage;
+var players = [];
+var kill = [];
+
+
+//获取本地数据存储,得到已死的人
+var Number = storage.getItem("number");
+var aa = storage.getItem("players"); //结果是字符串
+var n = storage.getItem("kill");
+kill =n.split(","); 
+players =aa.split(","); 
+console.log(players)
+console.log(n)
+
+
+	for(var i = 0;i < Number;i++){
+	arr[i] = document.createElement('section');
+	 img1 = document.createElement('img');
+	 div = document.createElement('div');
+     img2 = document.createElement('img');
+     
+       //创建一个div蒙版
+    arr[i].appendChild(img1); 
+    // arr[i].appendChild(div);
+
+     arr[i].appendChild(img2);
+     arr[i].className = 'section'
+     cards.appendChild(arr[i]);
+     img2.src = 'img/card.jpg';
+     img1.id = 'one'
+     img1.className = 'img';
+     img2.className = 'img';
+}
+
+
+
+
+//取出每个section中的第一张图片并放入数组中
+var One = [];
+var two = [];
+var sections = document.getElementsByTagName('section');
+for(var i = 0;i<sections.length;i++){
+	 One[i] = sections[i].getElementsByTagName('img')[0];
+	 two[i] = sections[i].getElementsByTagName('img')[1];
+}
+
+//遍历整个数组,一一将图片赋值给img,若出现狼人卡显示
+for(var i = 0;i<One.length;i++){
+	One[i].src = players[i];
+}
+var aa = [];
+var KI = [];
+for(var i = 0;i<kill.length;i++){
+	KI[i] = kill[i];
+}
+console.log(KI)
+for(var i = 0;i<kill.length;i++){
+	div = document.createElement('div');
+    div.id = 'abc';
+	div.innerHTML = '挂';
+	aa[i] = document.createElement('div');
+	arr[KI[i]].appendChild(div);
+	console.log(KI[i])
+	
+}
+   (function(){
+	   var bb = players[kill.pop()].toString();
+	 if (bb == 'img/yuyan.jpg') {
+	 	buttons[0].style.display = 'none';
+	 }
+	 else{
+	 	buttons[0].style.background ='gray';
+	 }
+ })();
+
+	for(var i =0;i<two.length;i++){
+        
+			two[i].onclick = function(n){
+				return function(){			
+				    buttons[0].style.display = 'block';
+                    	
+				    var section = document.getElementsByTagName('section');
+				    
+				    var img = document.createElement('img');
+				    section[n].appendChild(img);
+				    img.className = 'img';
+				    img.src = 'img/plice.jpg';
+				    
+				     storage.setItem("plice",n);
+				}
+			}(i)
+}
+buttons[0].onclick = function(){
+	for(var i =0;i<two.length;i++){
+		two[i].style.display = 'block';
+	}
+	buttons[1].style.display = 'block';
+}
+buttons[1].onclick = function(){
+	location.href = 'gameStart.html'
+}
+	</script>
+</body>
+</html>

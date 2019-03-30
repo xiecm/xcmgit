@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>修改密码</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/reviseTwo.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</head>
+<body>
+	<div class="all">
+		<header id="header">
+			<a href="reviseOne.html"> < </a>
+			<h1>修改密码</h1>				
+		</header><!-- /header -->
+    <section id="section">
+    	<p><i>用户名  </i><input type="text" name="" id="input" ></p>
+    	<p><i>新密码 : </i><input type="password" name=""></p>
+    	<p><i>确认密码 : </i><input type="password" name=""></p>
+    	<p class="pp">
+    		<button type="button">提交</button>
+    	    <button type="button">重置</button>
+        </p>
+    </section>
+	</div>
+	
+</body>
+<script type="text/javascript" charset="utf-8" async defer>
+	var inputs = document.getElementsByTagName('input');
+	console.log(inputs);
+	var buttons = document.getElementsByTagName('button');
+	console.log(buttons);
+	var inOne,inTwo,inThree;
+	var arr = [inOne,inTwo,inThree];
+
+
+      //本地数据存储
+	    var storage=window.localStorage;
+		inputs[0].value=storage.getItem("username");//从localStorage读取相应键名的值
+		
+
+
+	function input(){
+		
+		for(var i = 0;i<inputs.length;i++){
+			arr[i] = inputs[i].value;
+			
+		}return arr;
+	}
+	
+	inputs[2].onclick = function() {
+		input();
+		if(arr[1].length == 0){
+			alert('请输入密码');
+		}
+		else if(arr[1].length < 8 || arr[1].length > 12){
+			alert('请输入正确的密码格式')
+		}
+	}
+	buttons[0].onclick = function() {
+		input(); 
+		if(arr[1] != arr[2]){
+		   alert('输入的密码不一致');
+		}
+		else{
+			storage.setItem("password",arr[2]);
+			alert('密码修改成功')
+		   location.href = 'Home.html';
+		   
+		}
+	}
+	buttons[1].onclick = function() {
+		input();
+		for(var i = 1;i<inputs.length;i++){
+			arr[i] = '';
+		}
+	}
+
+</script>
+</html>

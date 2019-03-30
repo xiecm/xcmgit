@@ -1,0 +1,110 @@
+.all{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+header{
+	width: 100%;
+	height: 1.33333333rem;
+	background: #555;
+	color: #fff;
+	padding: 0  .53333333rem 0  .66666667rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.06666667rem !important;
+}
+header a{
+	height: 100%;
+	width: 1.33333333rem;
+	text-align: center;
+	line-height: 1.3333333333rem;
+	font-style: normal;
+	font-weight: 400;
+	font-size: .8rem;
+	cursor:pointer;
+	color: #fff;
+}
+header span{
+	font-size: .48rem;
+	line-height: 1.3333333333rem;
+	width: 8rem;
+	text-align: center;
+}
+section{
+	width: 100%;
+	height: 13.33333333rem;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+}
+section>li>input::placeholder{
+	font-size: .4rem;
+	padding-left: .13333333rem;
+}
+ section>li>input{
+	width: 5.33333333rem;
+	margin: 0;
+	font-size: .42666667rem;
+}
+section .write{
+	height: 1rem;
+	justify-content: flex-start;
+	margin-left:2.66666667rem; 
+}
+.write>input{
+	width: 1.86666667rem;
+}
+li{
+	display: flex;
+	justify-content: center;
+	height: 1rem;
+	line-height: 1rem;
+}
+section span{
+	width: 4.8rem;
+	cursor:pointer;
+	text-align: center;
+}
+section span.active{
+	font-size: .37333333rem;
+}
+li i{
+	font-style: normal;
+	font-size: .42666667rem;
+	width: 2.13333333rem;
+}
+em{
+	width: 1.94666667rem;
+	height: 1.33333333rem;
+	display: none;
+}
+#last{
+	margin-top: 1.06666667rem;
+	display: flex;
+	justify-content: space-around;
+}
+#last button{
+	width: 1.6rem;
+	height: 1.06666667rem;
+	border: .02666667rem solid rgb(245,245,245);
+	background: rgb(230,230,230);
+}
+#icon{
+	width: 1.06666667rem;
+	height:1.06666667rem;
+	text-align: center;
+	line-height: 1.06666667rem;
+	position: relative;
+
+}
+#icon img{
+	height: 50%;
+	position: absolute;
+	top: .26666667rem;
+	left: .26666667rem;
+	display: none;
+}
+#refer{
+	display: none;
+}
