@@ -1,0 +1,46 @@
+
+.shorter{
+    width: 13% !important;
+    display: inline-block;
+}
+label{
+    font-weight: 400;
+    color: #666;
+}
+select.input-lg{
+    height: 34px;
+    width:13%;
+    padding: 0 0 5px 5px ;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgb(230, 230, 230);
+}
+.input-center{
+    display: flex;
+    align-items: center;
+}
+.rad{
+    width: 20px;
+    padding-top: 5px;
+}
+.file{
+    width: 220px;
+    padding-right: 0;
+    line-height: 38px;
+}
+input[type=file]{
+    display: inline-block;
+}
+#inputfile{
+    border: 0;
+}
+#reset{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color:#fff;
+    color: #333;
+    margin-left: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 0px;
+}

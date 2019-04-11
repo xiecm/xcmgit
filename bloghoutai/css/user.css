@@ -1,0 +1,234 @@
+#content{
+    padding-right: 20px;
+}
+.left{
+    min-height:100vh;
+}
+#content>p{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#content>p input,p .input-lg{
+    height: 42px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 0px;
+    outline: none;
+}
+.input-lg{
+    width: 17%;
+    font-size: 14px;
+}
+#content>p span{
+    display: flex;
+    width: 60px;
+    height: 42px;
+    background-color: #009688;
+    margin-left: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+#content>p .search{
+    width: 25px;
+    margin: 0;
+    padding: 0;
+}
+.create{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.create button{
+    height: 40px;
+    width: 70px;
+    margin-right: 20px;
+    background-color: #009688;
+    color: #fff;
+    border: 1px solid #009688;
+}
+#table{
+    width: 98% !important;
+    max-height: 378px !important;
+    overflow: hidden;
+}
+.allChoose{
+    width: 40px;
+}
+table{
+    width: 100%;
+}
+table tr{
+    height: 40px !important;
+    border:1px solid #e6e6e6;
+}table td{
+    height: 40px;
+    padding-left: 15px;
+    border:1px solid #e6e6e6;
+}
+table th{
+    border:1px solid #e6e6e6;
+    color: #666;
+    font-weight: 400;
+}
+.col-xs-1,.col-xs-2{
+    padding-right: 0px !important;
+}
+table .bck{
+     background-color: rgb(235, 235, 235) !important;
+}
+table tbody tr:hover{
+    background-color: rgb(235, 235, 235);
+}
+.editor{
+    padding: 0 5px !important;
+}
+#one,#two,#three{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    
+    cursor: pointer;
+}
+.table-body .mid{
+    text-align: center;
+}
+#one{
+    background-color: #1E9FFF;
+    margin-right: 5px;
+}
+#two{
+    background-color: #FF5722;
+}
+#three{
+    padding: 4px 4px;
+    color: #333;
+    border:1px solid #C9C9C9;
+}
+.three{
+    padding:4px;
+    color: #333;
+    border:1px solid #009688;
+    background-color: #009688;
+    color: #fff;
+}
+.allChoose,.ID{
+    position: relative;
+}
+.allchoose,.choose{
+    border: 1px solid #d2d2d2;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    left: 50%;
+    cursor: pointer;
+}
+.allchoose img,.choose img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.table-body{
+    display: block;
+    width: 100%;
+    line-height:26px;
+	text-align:center;
+    color:#999;
+    background: #fff;
+}
+.table-body td{
+    text-align: left;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    margin-top: -25%;
+    left: 50%;
+    margin-left: -25%;
+    width: 550px;
+    box-sizing: border-box;
+}
+.modal-dialog,.modal-content{
+    width: 100%;
+    box-sizing: border-box;
+}
+#modal .modal-content{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.modal-header{
+    width: 100%;
+    box-sizing: border-box;
+    background:rgb(32,34,42);
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.close{
+    background: rgb(32,34,42) !important;
+    border: none !important;
+    color: #fff !important;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    font-weight: 400;
+}
+.modal-body label{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+.modal-body input{
+    width: 180px;
+}
+.modal-body li:nth-child(3){
+    display: flex;
+}
+.modal-body textarea{
+    width: 360px;
+    height: 130px;
+}
+.modal-body select{
+    width: 180px;
+    height: 38px;
+    border: 1px solid rgb(230, 230, 230);
+    outline:none;
+}
+.modal-body span{
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#mymodal{
+    text-align: left !important;
+}
+#Span{
+    width: 80px;
+    text-align: center;
+}
+#button{
+    height: 40px;
+    width: 70px;
+    margin-right: 20px;
+    background-color: #009688;
+    color: #fff;
+    border: 1px solid #009688;
+}
+.aa{
+    display: flex;
+}
