@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>m.igo.cn 移动端优化调研报告 — 对标指南者留学</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+  --bg: #0a0e1a;
+  --bg-card: rgba(15, 20, 40, 0.7);
+  --bg-card-hover: rgba(20, 28, 58, 0.8);
+  --surface: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.06);
+  --border-light: rgba(255,255,255,0.1);
+  --text: #e2e8f0;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+  --accent-orange: #f59e0b;
+  --accent-red: #ef4444;
+  --accent-green: #10b981;
+  --glow-blue: rgba(59,130,246,0.15);
+  --glow-cyan: rgba(6,182,212,0.15);
+  --glow-purple: rgba(139,92,246,0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== Background Effects ===== */
+.bg-grid {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none; z-index: 0;
+}
+.bg-orb {
+  position: fixed; border-radius: 50%; filter: blur(100px); pointer-events: none; z-index: 0;
+}
+.bg-orb.orb1 { width: 600px; height: 600px; top: -200px; right: -200px; background: rgba(59,130,246,0.08); }
+.bg-orb.orb2 { width: 500px; height: 500px; bottom: 10%; left: -150px; background: rgba(139,92,246,0.06); }
+.bg-orb.orb3 { width: 400px; height: 400px; top: 40%; right: -100px; background: rgba(6,182,212,0.05); }
+
+.content-wrap { position: relative; z-index: 1; }
+
+/* ===== Hero ===== */
+.hero { padding: 80px 0 60px; text-align: center; position: relative; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);
+  padding: 6px 18px; border-radius: 30px; font-size: 13px; color: var(--accent-blue);
+  font-weight: 500; margin-bottom: 24px; backdrop-filter: blur(8px);
+}
+.hero-badge .pulse {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--accent-blue);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59,130,246,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(59,130,246,0); }
+}
+.hero h1 {
+  font-size: 44px; font-weight: 800; letter-spacing: -1.5px;
+  background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  line-height: 1.2; margin-bottom: 16px;
+}
+.hero .subtitle {
+  font-size: 17px; color: var(--text-dim); max-width: 600px; margin: 0 auto; line-height: 1.8;
+}
+.hero .meta-line {
+  margin-top: 32px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;
+}
+.hero .meta-tag {
+  font-size: 12px; color: var(--text-muted); padding: 4px 14px;
+  border: 1px solid var(--border); border-radius: 6px; background: var(--surface);
+}
+.hero-line {
+  width: 120px; height: 2px; margin: 40px auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent-blue), var(--accent-cyan), transparent);
+}
+
+/* ===== Section ===== */
+.section { padding: 56px 0; }
+.section + .section { border-top: 1px solid var(--border); }
+.sec-header { margin-bottom: 36px; }
+.sec-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+.sec-label.blue { color: var(--accent-blue); }
+.sec-label.cyan { color: var(--accent-cyan); }
+.sec-label.purple { color: var(--accent-purple); }
+.sec-label.orange { color: var(--accent-orange); }
+.sec-label.green { color: var(--accent-green); }
+.sec-label.pink { color: var(--accent-pink); }
+.sec-label .line { width: 24px; height: 2px; border-radius: 1px; }
+.sec-label.blue .line { background: var(--accent-blue); }
+.sec-label.cyan .line { background: var(--accent-cyan); }
+.sec-label.purple .line { background: var(--accent-purple); }
+.sec-label.orange .line { background: var(--accent-orange); }
+.sec-label.green .line { background: var(--accent-green); }
+.sec-label.pink .line { background: var(--accent-pink); }
+.sec-title { font-size: 28px; font-weight: 700; color: #fff; letter-spacing: -.5px; }
+.sec-desc { font-size: 15px; color: var(--text-dim); margin-top: 8px; max-width: 640px; }
+
+/* ===== Stats Cards ===== */
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 28px 20px; text-align: center; position: relative; overflow: hidden;
+  backdrop-filter: blur(12px); transition: all .3s;
+}
+.stat-card:hover { border-color: var(--border-light); transform: translateY(-2px); }
+.stat-card::before {
+  content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 60%; height: 1px;
+}
+.stat-card:nth-child(1)::before { background: linear-gradient(90deg, transparent, var(--accent-red), transparent); }
+.stat-card:nth-child(2)::before { background: linear-gradient(90deg, transparent, var(--accent-orange), transparent); }
+.stat-card:nth-child(3)::before { background: linear-gradient(90deg, transparent, var(--accent-blue), transparent); }
+.stat-card:nth-child(4)::before { background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent); }
+.stat-num {
+  font-size: 42px; font-weight: 800; letter-spacing: -1px; line-height: 1;
+}
+.stat-card:nth-child(1) .stat-num { color: var(--accent-red); }
+.stat-card:nth-child(2) .stat-num { color: var(--accent-orange); }
+.stat-card:nth-child(3) .stat-num { color: var(--accent-blue); }
+.stat-card:nth-child(4) .stat-num { color: var(--accent-cyan); }
+.stat-label { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
+.stat-icon { font-size: 16px; margin-bottom: 8px; opacity: .8; }
+
+/* ===== Compare Table ===== */
+.compare-wrap {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; backdrop-filter: blur(12px);
+}
+.compare-table { width: 100%; border-collapse: collapse; }
+.compare-table th {
+  padding: 16px 20px; font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--text-muted); text-align: left;
+  border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.02);
+}
+.compare-table td {
+  padding: 18px 20px; font-size: 14px; border-bottom: 1px solid var(--border);
+  vertical-align: top; color: var(--text-dim); line-height: 1.7;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:hover td { background: rgba(255,255,255,0.01); }
+.compare-table .dim { font-weight: 600; color: #fff; min-width: 110px; font-size: 13px; }
+.compare-table b { color: var(--text); font-weight: 600; }
+.tag {
+  display: inline-block; padding: 3px 10px; border-radius: 6px;
+  font-size: 11px; font-weight: 600; letter-spacing: .3px;
+}
+.tag-red { background: rgba(239,68,68,0.15); color: #f87171; }
+.tag-orange { background: rgba(245,158,11,0.15); color: #fbbf24; }
+.tag-green { background: rgba(16,185,129,0.15); color: #34d399; }
+.tag-blue { background: rgba(59,130,246,0.15); color: #60a5fa; }
+.tag-ref {
+  font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-left: 4px;
+  background: rgba(245,158,11,0.1); color: var(--accent-orange); font-weight: 600;
+}
+
+/* ===== Score Bars ===== */
+.score-panel {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 32px; backdrop-filter: blur(12px);
+}
+.score-legend { display: flex; gap: 32px; margin-bottom: 24px; }
+.score-legend span { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+.legend-dot { width: 20px; height: 4px; border-radius: 2px; }
+.legend-dot.igo { background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); }
+.legend-dot.ref { background: linear-gradient(90deg, var(--accent-orange), var(--accent-pink)); }
+.score-row { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.score-row:last-child { margin-bottom: 0; }
+.score-label { width: 150px; font-size: 14px; font-weight: 500; color: var(--text); flex-shrink: 0; }
+.score-bars { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+.score-track { height: 8px; border-radius: 4px; background: rgba(255,255,255,0.04); overflow: hidden; position: relative; }
+.score-fill { height: 100%; border-radius: 4px; position: relative; }
+.score-fill.igo { background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan)); }
+.score-fill.ref { background: linear-gradient(90deg, var(--accent-orange), var(--accent-pink)); opacity: .7; }
+.score-vals { display: flex; justify-content: space-between; width: 150px; flex-shrink: 0; }
+.score-v { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.score-v.igo-c { color: var(--accent-cyan); }
+.score-v.ref-c { color: var(--accent-orange); }
+.score-diff {
+  font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 4px;
+  background: rgba(239,68,68,0.1); color: #f87171; flex-shrink: 0; width: 56px; text-align: center;
+}
+
+/* ===== Issue Cards ===== */
+.issues { display: flex; flex-direction: column; gap: 20px; }
+.issue {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; backdrop-filter: blur(12px); transition: all .3s;
+}
+.issue:hover { border-color: var(--border-light); }
+.issue-top { padding: 24px 28px 18px; display: flex; align-items: flex-start; gap: 16px; }
+.issue-idx {
+  width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 16px; flex-shrink: 0; color: #fff; position: relative;
+}
+.issue-idx.critical { background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 0 20px rgba(239,68,68,0.2); }
+.issue-idx.important { background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 0 20px rgba(245,158,11,0.2); }
+.issue-idx.suggest { background: linear-gradient(135deg, #3b82f6, #2563eb); box-shadow: 0 0 20px rgba(59,130,246,0.2); }
+.issue-info { flex: 1; }
+.issue-name { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.issue-sub { font-size: 13px; color: var(--text-muted); }
+.issue-right { flex-shrink: 0; }
+.issue-body { padding: 0 28px 24px; }
+.issue-cols { display: grid; }
+.issue-col { }
+.col-head {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+}
+.col-head .ind { width: 8px; height: 8px; border-radius: 2px; }
+.col-head.problem { color: #f87171; }
+.col-head.problem .ind { background: var(--accent-red); }
+.col-head.solution { color: #34d399; }
+.col-head.solution .ind { background: var(--accent-green); }
+.issue-col ul { padding-left: 0; list-style: none; }
+.issue-col ul li {
+  font-size: 13.5px; color: var(--text-dim); line-height: 1.8; padding-left: 16px;
+  position: relative; margin-bottom: 6px;
+}
+.issue-col ul li::before {
+  content: ''; position: absolute; left: 0; top: 10px;
+  width: 5px; height: 5px; border-radius: 50%;
+}
+.col-head.problem ~ ul li::before { background: rgba(239,68,68,0.4); }
+.col-head.solution ~ ul li::before { background: rgba(16,185,129,0.4); }
+.issue-col b { color: var(--text); font-weight: 600; }
+
+/* ===== Roadmap ===== */
+.roadmap-wrap {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 36px; backdrop-filter: blur(12px);
+}
+.roadmap { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 36px; }
+.roadmap::before {
+  content: ''; position: absolute; left: 11px; top: 12px; bottom: 12px; width: 2px;
+  background: linear-gradient(to bottom, var(--accent-red), var(--accent-orange), var(--accent-green));
+  border-radius: 1px; opacity: .5;
+}
+.rm-item { position: relative; padding: 20px 0 20px 28px; }
+.rm-item::before {
+  content: ''; position: absolute; left: -29px; top: 28px;
+  width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid var(--bg);
+}
+.rm-item.p1::before { background: var(--accent-red); box-shadow: 0 0 12px rgba(239,68,68,0.4); }
+.rm-item.p2::before { background: var(--accent-orange); box-shadow: 0 0 12px rgba(245,158,11,0.4); }
+.rm-item.p3::before { background: var(--accent-green); box-shadow: 0 0 12px rgba(16,185,129,0.4); }
+.rm-phase {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px;
+}
+.rm-phase.p1 { color: var(--accent-red); }
+.rm-phase.p2 { color: var(--accent-orange); }
+.rm-phase.p3 { color: var(--accent-green); }
+.rm-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.rm-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.8; }
+.rm-desc ul { padding-left: 18px; margin-top: 6px; }
+.rm-desc ul li { margin-bottom: 3px; color: var(--text-dim); }
+
+/* ===== Footer ===== */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0; text-align: center;
+}
+.footer p { font-size: 12px; color: var(--text-muted); line-height: 2; }
+.footer strong { color: var(--text-dim); }
+.footer a { color: var(--accent-blue); text-decoration: none; }
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 28px; letter-spacing: -.5px; }
+  .hero .subtitle { font-size: 15px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-num { font-size: 32px; }
+  .sec-title { font-size: 22px; }
+  .issue-cols { grid-template-columns: 1fr; }
+  .score-label { width: 100px; font-size: 12px; }
+  .score-vals { width: 100px; }
+  .compare-table td, .compare-table th { padding: 12px 14px; font-size: 12.5px; }
+  .hero .meta-line { gap: 12px; }
+  .score-row { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-orb orb1"></div>
+<div class="bg-orb orb2"></div>
+<div class="bg-orb orb3"></div>
+
+<div class="content-wrap">
+
+<!-- ========== HERO ========== -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-badge"><span class="pulse"></span> 竞品对标分析报告</div>
+    <h1>m.igo.cn 移动端<br>优化调研报告</h1>
+    <p class="subtitle">拿指南者留学 APP 当镜子，看看 m.igo.cn 哪里能做得更好，整理了 10 个最值得改的地方</p>
+    <div class="meta-line">
+      <span class="meta-tag">调研时间 2026.08</span>
+      <span class="meta-tag">对标产品 指南者留学 APP v4.1.0</span>
+      <span class="meta-tag">分析范围 移动端全链路</span>
+    </div>
+    <div class="hero-line"></div>
+  </div>
+</div>
+
+<!-- ========== OVERVIEW ========== -->
+<div class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label blue"><span class="line"></span> OVERVIEW</div>
+      <div class="sec-title">调研总览</div>
+      <div class="sec-desc">把 m.igo.cn 现有功能和指南者放在一起看，找出 10 个最需要补的短板</div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-icon">🔴</div><div class="stat-num">4</div><div class="stat-label">必须优先改</div></div>
+      <div class="stat-card"><div class="stat-icon">🟡</div><div class="stat-num">3</div><div class="stat-label">值得尽快改</div></div>
+      <div class="stat-card"><div class="stat-icon">🔵</div><div class="stat-num">3</div><div class="stat-label">锦上添花项</div></div>
+      <div class="stat-card"><div class="stat-icon">📋</div><div class="stat-num">10</div><div class="stat-label">一共找到这么多</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== BENCHMARK ========== -->
+<div class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label cyan"><span class="line"></span> BENCHMARK</div>
+      <div class="sec-title">核心维度对标</div>
+      <div class="sec-desc">挑了 6 个最关键的地方，逐项看看我们和指南者差多远</div>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th style="width:15%">比什么</th><th style="width:36%">我们现在什么样</th><th style="width:36%">指南者什么样</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="dim">AI 智能选校</td>
+            <td>有「智能选校」入口，展示录取画像、院校探索等概念模块，跳转小程序完成<b>轻量化择校定位</b>，根据目标（学历、专业）、背景（本科院校、语言成绩、GPA）查询<b>院校选择趋势看板</b>和<b>相似录取案例</b>。</td>
+            <td>网页无智能选校入口；「极光智能选校」基于 <b>10万+ 真实案例</b>训练，6步测评 10 秒出方案，成功率可视化（冲刺/主申/稳妥三档），支持院校优先/专业优先双模式<span class="tag-ref">★★★</span></td>
+          </tr>
+          <tr>
+            <td class="dim">案例库深度</td>
+            <td>有案例库入口，以<b>案例故事方式呈现</b>，<b>案例规模感弱</b>、<b>无真实性承诺</b></td>
+            <td><b>30,000+ 真实案例</b>，按院校/GPA/专业/本科院校多维筛选，承诺「真实案例，假一赔万」<span class="tag-ref">★★</span></td>
+          </tr>
+          <tr>
+            <td class="dim">院校数据库</td>
+            <td>院校库存在，但<b>信息层级较浅</b>，缺少<b>院校数据、择校理由</b>（特色、专业、体验）、<b>录取案例</b>等深度内容</td>
+            <td><b>360+ 院校 / 12,400+ 专业</b>，含课程模块、录取案例、在读评价、就业去向统计<span class="tag-ref">★★★</span></td>
+          </tr>
+          <tr>
+            <td class="dim">服务透明度</td>
+            <td><b>无申请进度查询</b>、<b>缺少服务承诺</b>，需要人工去小程序查看</td>
+            <td>邮箱共享 + APP 实时进度同步 + 文书提交前学员确认 + 材料留档可追溯，12 大服务保障均有赔付承诺<span class="tag-ref">★</span></td>
+          </tr>
+          <tr>
+            <td class="dim">背景提升体系</td>
+            <td>有青稞/致理/探微等科研项目，但集合在<b>软实力提升综合页面</b>中，需要进入二级页查看，<b>无独立入口</b></td>
+            <td>独立实习库、竞赛库、科研模块，与选校系统打通，智能推荐<span class="tag-ref">★★★★</span></td>
+          </tr>
+          <tr>
+            <td class="dim">用户粘性</td>
+            <td>单向内容输出为主（视频/直播/文章），<b>无社群/互动/打卡</b></td>
+            <td>APP 内置社群 + 申请经验社区 + 学长分享区 + <b>116 万</b>注册用户生态<span class="tag-ref">★★★</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== 10 ISSUES ========== -->
+<div class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label orange"><span class="line"></span> FINDINGS</div>
+      <div class="sec-title">10 个最值得改的地方</div>
+      <div class="sec-desc">按紧急程度排：🔴 先改 → 🟡 尽快 → 🔵 有余力再改</div>
+    </div>
+
+    <div class="issues">
+
+      <!-- 1 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx critical">01</div>
+          <div class="issue-info"><div class="issue-name">把 AI 选校做起来</div><div class="issue-sub">现在只是摆样子，要让它真能帮用户选学校</div></div>
+          <div class="issue-right"><span class="tag tag-red">🔴 先改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>新通eduspark案例库里有院校梯度数据（冲刺/稳妥/保底），但<b>匹配能力不透明</b>，核心使用场景为<b>顾问端工作台</b>，需要顾问调取演示。</li>
+              <li>需在小程序端开放<b>轻量化检索</b>，不用线下到店也能<b>自主根据背景匹配</b>（<b>冲刺/稳妥/保底三档方案</b>）院校，<b>测算录取成功率</b></li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 2 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx critical">02</div>
+          <div class="issue-info"><div class="issue-name">案例库要能用起来</div><div class="issue-sub">能搜、能比、让人信服，而不只是挂着看</div></div>
+          <div class="issue-right"><span class="tag tag-red">🔴 先改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>新通PC端有<b>案例录取大数据</b>，复用<b>相似背景多维筛选</b>，呈现近几年最新<b>11万+案例</b>展示规模，提供<b>11万案例数据调用</b>给客户前端案例筛选。</li>
+              <li>同时，保留新通101可读性案例故事同步展示。</li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 3 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx critical">03</div>
+          <div class="issue-info"><div class="issue-name">让用户看到服务进度</div><div class="issue-sub">签了单不能黑箱操作，得让用户随时知道走到哪一步了</div></div>
+          <div class="issue-right"><span class="tag tag-red">🔴 先改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>移动端显眼位置展示<b>服务承诺与保障体系</b></li>
+              <li>提供<b>全景服务流程</b></li>
+              <li>跳转小程序查看<b>申请服务进度</b></li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 4 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx critical">04</div>
+          <div class="issue-info"><div class="issue-name">院校和专业信息要做深</div><div class="issue-sub">别只堆数据，要帮用户做决定</div></div>
+          <div class="issue-right"><span class="tag tag-red">🔴 先改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>院校详情页增加<b>院校数据、择校理由、录取案例</b>等<b>深度模块</b></li>
+              <li>引入多排名体系对照（ QS + US News）</li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 5 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx important">05</div>
+          <div class="issue-info"><div class="issue-name">背景提升项目要集中展示</div><div class="issue-sub">科研、实习、竞赛散落各处，用户找不到</div></div>
+          <div class="issue-right"><span class="tag tag-orange">🟡 尽快</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>设立<b>独立「背景提升」频道</b>，整合科研、实习、竞赛、社会实践等板块</li>
+              <li>结合用户专业<b>智能推荐匹配项目</b></li>
+              <li>展示往期参与者录取结果，建立<b>「背景提升→录取」因果关联</b></li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 6 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx important">06</div>
+          <div class="issue-info"><div class="issue-name">得有社区，让用户留下来</div><div class="issue-sub">用完就走没有粘性，要让人愿意常回来看看</div></div>
+          <div class="issue-right"><span class="tag tag-blue">🔵 有余力再改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>增加<b>留学圈</b>，按国家/专业/阶段分圈子</li>
+              <li>引入<b>学长学姐分享区</b>——<b>真实申请经验与就读体验</b></li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+      <!-- 7 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx suggest">07</div>
+          <div class="issue-info"><div class="issue-name">品牌信任感要加强</div><div class="issue-sub">首页光有数据不够，得有资质、奖项、保障，让人放心</div></div>
+          <div class="issue-right"><span class="tag tag-blue">🔵 有余力再改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>首页工具增加关于我们入口——教育部资质、行业奖项、媒体报道、用户好评全覆盖，明确展示服务保障</li>
+              <li>首页banner内容营销偏重短期重点项目，用户信任感弱，做好内容取舍。</li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 8 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx suggest">08</div>
+          <div class="issue-info"><div class="issue-name">内容要成体系</div><div class="issue-sub">文章、视频、活动混在一起，用户找起来费劲</div></div>
+          <div class="issue-right"><span class="tag tag-blue">🔵 有余力再改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>建立<b>「留学攻略中心」</b>——国家 × 学位 × 阶段三维分类</li>
+              <li>增加<b>「申请时间线」功能</b>——输入目标年份自动生成规划</li>
+              <li>活动入口与知识内容分离，保持内容区域纯净</li>
+              <li>引入<b>「学长经验」专栏</b>，采访/自述形式输出深度内容</li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 9 -->
+      <div class="issue">
+        <div class="issue-top">
+          <div class="issue-idx suggest">09</div>
+          <div class="issue-info"><div class="issue-name">页面结构和导航要理顺</div><div class="issue-sub">用户点几步还找不到想要的，体验不好</div></div>
+          <div class="issue-right"><span class="tag tag-blue">🔵 有余力再改</span></div>
+        </div>
+        <div class="issue-body"><div class="issue-cols">
+          <div class="issue-col">
+            <div class="col-head solution"><span class="ind"></span>怎么改</div>
+            <ul>
+              <li>重新梳理<b>信息架构</b>：首页聚焦选校+案例+产品三条核心路径</li>
+              <li><b>底部导航优化</b>：首页 | 院校 | 案例 | 工具箱 | 我的</li>
+              <li>活动增加智能筛选，优先展示匹配用户目标的活动</li>
+              <li><b>核心工具入口前置</b>——「智能选校」「案例库」提至首页首屏</li>
+            </ul>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== ROADMAP ========== -->
+<div class="section">
+  <div class="container">
+    <div class="sec-header">
+      <div class="sec-label green"><span class="line"></span> ROADMAP</div>
+      <div class="sec-title">建议实施路线图</div>
+      <div class="sec-desc">分三步走，先把最要命的补上，再慢慢建生态</div>
+    </div>
+    <div class="roadmap-wrap">
+      <div class="roadmap">
+        <div class="rm-item p1">
+          <div class="rm-phase p1">第一步 · 1-2 个月 · 先把短板补上</div>
+          <div class="rm-title">AI 选校能用了 + 案例库能搜了 + 服务进度能看了</div>
+          <div class="rm-desc">
+            <ul>
+              <li>基于历史录取数据构建 AI 选校匹配模型（MVP），实现成功率可视化</li>
+              <li>案例库增加相似背景筛选，补充完整申请者背景信息展示</li>
+              <li>上线申请进度查询基础功能，签约用户可查看关键节点状态</li>
+              <li>首页增加服务保障 / 荣誉展示模块</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rm-item p2">
+          <div class="rm-phase p2">第二步 · 3-4 个月 · 把内容和服务做厚</div>
+          <div class="rm-title">院校信息做深 + 背景提升集中管 + 产品价格说清楚</div>
+          <div class="rm-desc">
+            <ul>
+              <li>院校详情页增加课程模块、就读体验、就业去向等深度内容</li>
+              <li>引入多排名体系对照功能</li>
+              <li>上线独立「背景提升」频道，整合科研 / 实习 / 竞赛资源</li>
+              <li>优化产品分类展示，增加套餐对比表与基础价格参考</li>
+              <li>重新梳理信息架构与底部导航</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rm-item p3">
+          <div class="rm-phase p3">第三步 · 5-6 个月 · 建起自己的护城河</div>
+          <div class="rm-title">社区建起来 + 内容成体系 + 全流程打通</div>
+          <div class="rm-desc">
+            <ul>
+              <li>上线留学社区 / 圈子功能，引入学长学姐分享机制</li>
+              <li>构建结构化「留学攻略中心」，按国家 × 学位 × 阶段组织内容</li>
+              <li>实现选校 → 背景提升 → 申请 → 进度追踪的全链路闭环</li>
+              <li>申请邮箱 / 账号共享机制完善，文书确认流程上线</li>
+              <li>引入用户评价体系，形成口碑传播生态</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer">
+  <div class="container">
+    <p><strong>m.igo.cn 移动端优化调研报告</strong></p>
+    <p>对标竞品：指南者留学 APP v4.1.0 & 选校助手小程序 &nbsp;|&nbsp; 调研时间：2026 年 8 月</p>
+    <p>数据来源：m.igo.cn 移动端 · <a href="https://m.compassedu.hk/app" target="_blank">指南者留学官网</a> · 第三方评测报告</p>
+  </div>
+</div>
+
+</div><!-- content-wrap -->
+
+</body>
+</html>
