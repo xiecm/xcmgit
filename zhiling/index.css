@@ -9,13 +9,26 @@
   --secondary-foreground: #475569;
   --border: #e2e8f0;
   --primary: #316bff;
-  --primary-dark: #00967a;
+ --primary-dark: #204bd9;
+  
+  /* 前景色：保持白色 */
   --primary-foreground: #ffffff;
-  --primary-5: #00c59e0d;
-  --primary-10: #00c59e1a;
-  --primary-20: #00c59e33;
-  --primary-30: #00c59e4d;
-  --primary-40: #00c59e66;
+  
+  /* 透明度变体：基于 #316bff 计算 */
+  /* 5% 透明度 */
+  --primary-5: #316bff0d;
+  
+  /* 10% 透明度 */
+  --primary-10: #316bff1a;
+  
+  /* 20% 透明度 */
+  --primary-20: #316bff33;
+  
+  /* 30% 透明度 */
+  --primary-30: #316bff4d;
+  
+  /* 40% 透明度 */
+  --primary-40: #316bff66;
 
   --radius: 0.5rem;
   --radius-xl: 0.75rem;
@@ -302,6 +315,7 @@ button {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  padding-left: 10px;
 }
 
 .hero-btn-primary:hover {
@@ -1346,6 +1360,9 @@ button {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--primary);
+  background: var(--primary-10);
+  padding: 4px 8px;
+  border-radius: 30px;
 }
 .mentor-name {
   margin-top: 0.75rem;
