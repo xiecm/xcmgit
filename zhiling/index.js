@@ -16,9 +16,9 @@ const countries = [
         `博士申请套磁选校一体化`,
       ],
       tagline: `常春藤联盟 · 综合大学 · 整体审查录取 · 博士科研导向`,
-      level: '本科',
+      level: '本科/硕士/博士',
       duration: '规划期 ≤2 年',
-      title: '美国本科智领名校计划',
+      title: '美国本/硕/博智领名校计划',
       subtitle: "US Elite Admission Program",
       price: "¥48,000 – ¥198,000",
       modules: [
@@ -37,12 +37,12 @@ const countries = [
       ],
       stats: [
         {
-          label: `TOP 30 院校`,
-          value: `30+`,
+          label: `院校导师`,
+          value: `TOP30`,
         },
         {
-          label: `智领 26 战绩`,
-          value: `200+`,
+          label: `名企专家`,
+          value: `500强`,
         },
         {
           label: `服务层次`,
@@ -62,7 +62,7 @@ const countries = [
     number: "02",
     program: {
       highlights: [
-        `慕尼黑工大 QS#25 · 亚琛工大 · 卡尔斯鲁厄理工`,
+        `慕尼黑工大 · 亚琛工大 · 卡尔斯鲁厄理工`,
         `18个月找工签证`,
         `IB/A-Level/AP/OSSD直接申请`,
         `APS审核1V1辅导10小时`,
@@ -116,9 +116,9 @@ const countries = [
       ],
 
       tagline: `G5 精英 · 罗素集团 · 一年制硕士 · 导师主导制博士`,
-      level: "硕士/博士",
+      level: "本科/硕士/博士",
       duration: '规划期 6-18 个月',
-      title: '英国硕士/博士智领名校计划',
+      title: '英国本/硕/博智领名校计划',
       subtitle: "UK G5 Admission Program",
       price: "¥38,000 – ¥158,000",
       modules: [
@@ -158,15 +158,15 @@ const countries = [
     number: "04",
     program: {
       highlights: [
-        `麦吉尔 #30 · 多伦多 #32 · UBC #45`,
+        `麦吉尔 · 多伦多 · UBC`,
         `Co-op 带薪实习项目`,
         `毕业工签最长 3 年`,
         `博士导师主导制申请`,
       ],
       tagline: `公立教育 · Co-op 带薪实习 · 移民友好 · 研究型博士`,
-      level: "本科/硕士",
+      level: "本科/硕士/博士",
       duration: '规划期 1-2 年',
-      title: '加拿大本科/硕士智领名校计划',
+      title: '加拿大本/硕/博智领名校计划',
       subtitle: "Canada Immigration Pathway",
       price: "¥32,000 – ¥128,000",
       modules: [
@@ -205,15 +205,15 @@ const countries = [
     number: "05",
     program: {
       highlights: [
-        `NUS QS#8 · NTU QS#12 · SMU`,
+        `NUS QS · NTU QS · SMU`,
         `硬性筛选 + 综合评估`,
         `一年制授课型硕士`,
         `博士亚洲科研前沿导向`,
       ],
       tagline: `亚洲名校 · 双语环境 · 就业衔接 · 科研前沿`,
-      level: "本科/硕士",
+      level: "硕士/博士",
       duration: '规划期 6-12 个月',
-      title: '新加坡本科/硕士智领名校计划',
+      title: '新加坡硕士/博士智领名校计划',
       subtitle: "Singapore Top Uni Program",
       price: "¥22,000 – ¥68,000",
       modules: [
@@ -233,12 +233,12 @@ const countries = [
           value: `6所`,
         },
         {
-          label: `NUS QS 排名`,
-          value: `#8`,
+          label: `一年制硕士`,
+          value: `1年`,
         },
         {
-          label: `NTU QS 排名`,
-          value: `#12`,
+          label: `服务层次`,
+          value: `硕博`,
         },
       ],
     },
@@ -295,9 +295,9 @@ const countries = [
 
 const countryList = [
   { code: "US", name: "美国", codeLower: "us" },
-  { code: "DE", name: "德国", codeLower: "de" },
   { code: "GB", name: "英国", codeLower: "gb" },
   { code: "CA", name: "加拿大", codeLower: "ca" },
+  { code: "DE", name: "德国", codeLower: "de" },
   { code: "SG", name: "新加坡", codeLower: "sg" },
   { code: "HK", name: "中国香港", codeLower: "hk" },
 ];
