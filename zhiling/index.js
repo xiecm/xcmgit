@@ -369,7 +369,7 @@ const edgeData = [
   {
     icon: "lightbulb",
                 title: 'SMARTER 智能系统',
-                desc: '新通专有SMARTER智能系统提供全真模考语言评估，基于20万+真实录取案例，AI精准匹配院校组合。'
+                desc: '新通专有SMARTER智能系统提供全真模考语言评估，全球案例中心基于50万+真实录取案例，AI精准匹配院校组合。'
               },
               {
     icon: "network",
@@ -397,41 +397,6 @@ const timelineData = [
               { step: '06', time: '2-3 个月', title: '文书赋能', desc: '素材收集 & 亮点挖掘 · 中外思维融合文书润色 · 外籍导师定稿' },
               { step: '07', time: '1-2 个月', title: '申请递交与结果跟进', desc: '网申信息填写 · 成绩送分 · 邮件回复 · 面试辅导与模拟 · 签证材料准备' },
               { step: '08', time: '持续护航', title: '行前留后护航', desc: '行前培训 · 选课指导 · 在读就业咨询 · 毕业前OPT/工签咨询 · 归国学历认证' }
-];
-
-const mentorData = [
-{
-                tag: 'Mentor 01',
-                name: 'F 老师 · 名企专家导师',
-                focus: '新加坡/金融方向',
-                edu: '新加坡国立大学 金融工程本硕',
-                work: '现任中金公司资管投资经理（曾就职高盛、量化对冲基金）',
-                keywords: ['高盛', '中金', '量化投资']
-              },
-              {
-                tag: 'Mentor 02',
-                name: 'J 老师 · 集团策略规划专家',
-                focus: '美国/战略咨询方向',
-                edu: '国内985本科 · 美国M7之一MBA',
-                work: '现任沃尔玛旗下高端会员零售战略',
-                keywords: ['宝洁', 'DE BEERS', 'Bain']
-              },
-              {
-                tag: 'Mentor 03',
-                name: 'K 老师 · 名企专家导师',
-                focus: '港新/科技产品方向',
-                edu: '香港科技大学 MBA',
-                work: '现任微软中国资深产品市场经理',
-                keywords: ['微软', '产品战略', '港科大']
-              },
-              {
-                tag: 'Mentor 04',
-                name: 'D 老师 · 博士申请指导专家',
-                focus: '英美/计算机AI方向',
-                edu: '卡内基梅隆大学博士后 · 德克萨斯大学具身智能实验室副主任',
-                work: '美国工程院院士研究团队核心成员，10+年科研及RP指导经验',
-                keywords: ['CMU', '具身智能', 'AI研究']
-              }
 ];
 
 const navbar = document.getElementById('navbar');
@@ -669,30 +634,6 @@ function renderEdge() {
     )
     .join("");
 }
-
-function renderMentors() {
-  const container = document.getElementById("mentorsGrid");
-  if (!container) return;
-  container.innerHTML = mentorData
-    .map(
-      (m, idx) => `
-    <div class="mentor-card anim-up-sm" style="transition-delay:${idx * 0.08}s">
-      <span class="mentor-tag">${m.tag}</span>
-      <h3 class="mentor-name">${m.name}</h3>
-      <p class="mentor-focus">${m.focus}</p>
-      <div class="mentor-details">
-        <p>${m.edu}</p>
-        <p>${m.work}</p>
-      </div>
-      <div class="mentor-keywords">
-        ${m.keywords.map((k) => `<span class="mentor-kw">${k}</span>`).join("")}
-      </div>
-    </div>
-  `,
-    )
-    .join("");
-}
-
 // ===== EVENT HANDLERS =====
 function setActiveCountry(code) {
   if (activeCountry === code) return;
@@ -770,7 +711,6 @@ function init() {
   renderEdge();
   renderTimeline();
   renderOffersFilter();
-  renderMentors();
   setupScrollAnimations();
 
   // Make toggleMobileNav and closeMobileNavScreen global

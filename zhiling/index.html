@@ -144,7 +144,8 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="hero-btn-arrow" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
-            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="scrollToSection('program')">探索国家产品</button>
+            </svg></button><button data-slot="button" class="hero-btn-secondary"
+            onclick="scrollToSection('program')">探索国家产品</button>
         </div>
       </div>
     </section>
@@ -291,11 +292,85 @@
     <section id="mentors" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">策略规划专家团</h2>
-          <p class="section-desc">由拥有留学背景 & 五年以上500强名企从业经验的职业规划导师，以及10年+科研经验的博士申请指导专家组成。</p>
+          <h2 class="section-title">多V1环抱式服务</h2>
+          <p class="section-desc">覆盖留学前中后全程</p>
         </div>
         <div class="mentors-grid" id="mentorsGrid">
-          <!-- filled by JS -->
+          <div class="teac teac1">
+            <p>资深留学咨询规划顾问</p>
+            <p class="dis-f">服务品质考核全五星顾问<br>专注澳大利亚本硕申请</p>
+            <ul class="dis-c">
+              <li class="dis-f">综合背景评估，升学规划指导</li>
+              <li class="dis-f">申请要求解读，院校&amp;专业匹配</li>
+              <li class="dis-f">个性化选校方案制定</li>
+              <li class="dis-f">申请进度全程跟进，实时沟通管疑</li>
+            </ul>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+          </div>
+          <div class="teac teac2">
+            <p>中方菁英文案</p>
+            <p class="dis-f">全方位内部选拔</p>
+            <ul class="dis-c">
+              <li class="dis-f">文书素材收集及亮点梳理</li>
+              <li class="dis-f">文书创作及文化适应性调整</li>
+              <li class="dis-f">协助与外教沟通，预备头脑风暴</li>
+              <li class="dis-f">负责网申填写等申请季的精细化操作</li>
+            </ul>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+            <span class="dis-c">更懂中国学子</span>
+          </div>
+          <div class="teac teac3">
+            <p>牛校外籍导师</p>
+            <p class="dis-f">牛校硕士及以上学历<br>覆盖常规学科领域</p>
+            <ul class="">
+              <li class="dis-f">文书头脑风暴:挖掘学生过往经历、提炼个人亮点</li>
+              <li class="dis-f">文书润色：个人陈述PS润色</li>
+            </ul>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+            <span class="dis-c spanleft">更地道的表达</span>
+          </div>
+          <div class="teac teac4 dis-f">
+            <div>
+              <p>集团策略规划导师</p>
+              <p class="dis-f">10年+全球牛校申请经验<br>专注高端院校中后期规划</p>
+              <ul class="">
+                <li class="dis-f">申请者背景SWOT分析，目标院校与<br>专业录取画像解读，申请目标拆解</li>
+                <li class="dis-f">动态规划提升方案及行动路线报告<br>(选课指导、GPA管理、标化考试<br>规划、软背景活动规划等)</li>
+              </ul>
+            </div>
+            <div>
+              <p>集团选校导师</p>
+              <p class="dis-f">10年+澳大利亚牛校<br>申请经验</p>
+              <ul class="">
+                <li class="dis-f">个性化选校规划及选校<br>方案制定</li>
+                <li class="dis-f">制胜申请策略设计</li>
+              </ul>
+            </div>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+            <span class="dis-c">更懂大学招生</span>
+          </div>
+          <div class="teac teac5">
+            <p>职业管理师<br>
+              名企专属导师<br>
+              就业规划师</p>
+            <ul class="">
+              <li class="dis-f">职业测评与深度解析，求职方向与专业选择解析</li>
+              <li class="dis-f">留学+职涯一体规划，定制个性化留学规划和求职规划方案</li>
+            </ul>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+            <span class="dis-c spanleft">更懂名企招聘</span>
+          </div>
+          <div class="teac teac6">
+            <p>竞争力提升<br>
+              项目导师</p>
+
+            <p class="dis-f">海内外牛校教授<br>全球名企业内导师</p>
+            <ul class="">
+              <li class="dis-f">学术科研：牛校教授亲带科研课题，内部专业讨论，文献综述调研，实验操作，组会过论、结果验证、论文写作等，收获高认可座推荐信</li>
+              <li class="dis-f">名企实习：业内导师亲自带教，根据实际工作内容产出成果，导师润色简历，收获高认可度推荐信、实习证明与背调支持</li>
+            </ul>
+            <div class="dis-c tbtn" onclick="leyubtn()">预约咨询</div>
+          </div>
         </div>
         <div class="hero-btn-group"
           style="opacity: 1; will-change: opacity, transform; transition: opacity 0.6s, transform 0.6s; transform: translateY(0px);">
@@ -310,26 +385,100 @@
     </section>
 
     <!-- ===== CTA ===== -->
-    <section class="cta">
+    <section id="bonus" class="section">
       <div class="container">
-        <h2 class="cta-title">开启你的名校申请之旅</h2>
-        <p class="cta-desc">立即预约免费咨询，获取专属留学规划方案与竞争力评估报告。</p>
-        <div class="cta-buttons">
+        <div class="bonus-grid">
+            <div>
+              <h2 class="bonus-heading">开启你的名校申请之旅</span></h2>
+              <ul class="bonus-list">
+                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span>职涯引领留学，规划升学蓝图</span></li>
+                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span>智慧赋能申请，全面提升背景</span></li>
+                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg><span>中英思维融合，精塑理想形象</span></li>
+              </ul>
+              <div class="cta-buttons">
           <button class="cta-btn cta-btn-primary">
             <svg class="svg-icon-sm" viewBox="0 0 24 24">
-              <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
-              <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+              <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"></path>
+              <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path>
             </svg>
             立即咨询
           </button>
           <button class="cta-btn cta-btn-outline">
             <svg class="svg-icon-sm" viewBox="0 0 24 24">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
             电话预约
           </button>
         </div>
+            </div>
+            <div class="bonus-card">
+              <div class="bonus-card-inner">
+                <h2 class="cta-title">立即规划全球名校申请方案</h2>
+                <p class="cta-subtitle">专属顾问1V1沟通，为你定制智领名校方案</p>
+                <form class="cta-ctaForm sameform">
+                  <input type="hidden" class="partId" name="partId" value="baoyan">
+                  <input type="hidden" class="partName" name="partName" value="保研产品【集团】-免费规划">
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="form-col"><input type="text" name="username" placeholder="您的姓名" class="form-input">
+                      </div>
+                      <div class="form-col"><input type="tel" name="userphone" placeholder="联系电话" class="form-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="form-col">
+                        <select name="usercountry" id="" class="form-input form-country">
+                          <option value="">意向国家/地区</option>
+                          <option value="美国">美国</option>
+                          <option value="澳洲">澳洲</option>
+                          <option value="加拿大">加拿大</option>
+                          <option value="澳大利亚">澳大利亚</option>
+                          <option value="新西兰">新西兰</option>
+                          <option value="中国香港">中国香港</option>
+                          <option value="中国澳门">中国澳门</option>
+                          <option value="新加坡">新加坡</option>
+                          <option value="马来西亚">马来西亚</option>
+                          <option value="泰国">泰国</option>
+                          <option value="日本">日本</option>
+                          <option value="韩国">韩国</option>
+                          <option value="意大利">意大利</option>
+                          <option value="西班牙">西班牙</option>
+                          <option value="德国">德国</option>
+                          <option value="法国">法国</option>
+                          <option value="爱尔兰">爱尔兰</option>
+                          <option value="荷兰">荷兰</option>
+                          <option value="瑞士">瑞士</option>
+                          <option value="北欧">北欧</option>
+                          <option value="其他">其他</option>
+                        </select>
+                      </div>
+                      <div class="form-col">
+                        <input type="text" placeholder="所在城市" name="usercity" class="form-input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-submit submit"><i class="ri-send-plane-line"></i>免费规划</div>
+                </form>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
