@@ -368,42 +368,42 @@ const competenceData = [
 const edgeData = [
   {
     icon: "lightbulb",
-                title: 'SMARTER 智能系统',
-                desc: '新通专有SMARTER智能系统提供全真模考语言评估，全球案例中心基于50万+真实录取案例，AI精准匹配院校组合。'
-              },
-              {
+    title: 'SMARTER 智能系统',
+    desc: '新通专有SMARTER智能系统提供全真模考语言评估，全球案例中心基于50万+真实录取案例，AI精准匹配院校组合。'
+  },
+  {
     icon: "network",
-                title: '10年+ 集团策略专家',
-                desc: '深谙美英港新德加录取偏好，拥有留学行业内超10年全球名校申请经验。'
-              },
-              {
+    title: '10年+ 集团策略专家',
+    desc: '深谙美英港新德加录取偏好，拥有留学行业内超10年全球名校申请经验。'
+  },
+  {
     icon: "award2",
-                title: '百+名校教授科研资源',
-                desc: '哥伦比亚/约翰霍普金斯/普林斯顿/NUS/NTU等终身教授直接指导，100+课题可选。'
-              },
-              {
+    title: '百+名校教授科研资源',
+    desc: '哥伦比亚/约翰霍普金斯/普林斯顿/NUS/NTU等终身教授直接指导，100+课题可选。'
+  },
+  {
     icon: "briefcase2",
-                title: '500强名企实训资源',
-                desc: '麦肯锡·德勤·罗兰贝格·腾讯·阿里·耐克战略资源对接，为申请与求职双铺路。'
-              }
+    title: '500强名企实训资源',
+    desc: '麦肯锡·德勤·罗兰贝格·腾讯·阿里·耐克战略资源对接，为申请与求职双铺路。'
+  }
 ];
 
 const timelineData = [
- { step: '01', time: '1-2 周', title: '留学咨询', desc: '资深顾问1V1咨询 · 个性化留学方案推荐 · SMARTER智能系统免费模考语言评估' },
-              { step: '02', time: '1 个月', title: '专业/职业方向定位', desc: '北森职业性格测评 · 名企专家导师1V1职业规划课 · CBL案例式兴趣探索营' },
-              { step: '03', time: '持续至申请季前', title: '申请策略规划', desc: '集团专家深度访谈 & 申请力提升脑暴 · 出具《留学申请力提升行动方案》' },
-              { step: '04', time: '6-18 个月', title: '竞争力提升', desc: '学术科研 · 名企实习/PTA · 学术竞赛 · 企业实训 · 社会实践项目落地' },
-              { step: '05', time: '2-3 个月', title: '选校定校', desc: '“保底-匹配-冲刺”梯度选校方案 · 多轮次动态跟踪 · 套磁名单筛选' },
-              { step: '06', time: '2-3 个月', title: '文书赋能', desc: '素材收集 & 亮点挖掘 · 中外思维融合文书润色 · 外籍导师定稿' },
-              { step: '07', time: '1-2 个月', title: '申请递交与结果跟进', desc: '网申信息填写 · 成绩送分 · 邮件回复 · 面试辅导与模拟 · 签证材料准备' },
-              { step: '08', time: '持续护航', title: '行前留后护航', desc: '行前培训 · 选课指导 · 在读就业咨询 · 毕业前OPT/工签咨询 · 归国学历认证' }
+  { step: '01', time: '1-2 周', title: '留学咨询', desc: '资深顾问1V1咨询 · 个性化留学方案推荐 · SMARTER智能系统免费模考语言评估' },
+  { step: '02', time: '1 个月', title: '专业/职业方向定位', desc: '北森职业性格测评 · 名企专家导师1V1职业规划课 · CBL案例式兴趣探索营' },
+  { step: '03', time: '持续至申请季前', title: '申请策略规划', desc: '集团专家深度访谈 & 申请力提升脑暴 · 出具《留学申请力提升行动方案》' },
+  { step: '04', time: '6-18 个月', title: '竞争力提升', desc: '学术科研 · 名企实习/PTA · 学术竞赛 · 企业实训 · 社会实践项目落地' },
+  { step: '05', time: '2-3 个月', title: '选校定校', desc: '“保底-匹配-冲刺”梯度选校方案 · 多轮次动态跟踪 · 套磁名单筛选' },
+  { step: '06', time: '2-3 个月', title: '文书赋能', desc: '素材收集 & 亮点挖掘 · 中外思维融合文书润色 · 外籍导师定稿' },
+  { step: '07', time: '1-2 个月', title: '申请递交与结果跟进', desc: '网申信息填写 · 成绩送分 · 邮件回复 · 面试辅导与模拟 · 签证材料准备' },
+  { step: '08', time: '持续护航', title: '行前留后护航', desc: '行前培训 · 选课指导 · 在读就业咨询 · 毕业前OPT/工签咨询 · 归国学历认证' }
 ];
 
 const navbar = document.getElementById('navbar');
 let menuOpen = false;
 
 function updateNav() {
-  const scrolled = window.scrollY > 60;
+  const scrolled = window.scrollY > 700;
   if (scrolled) {
     navbar.classList.add('nav-scrolled');
   } else {
@@ -436,14 +436,21 @@ function escapeHtml(str) {
 
 function renderCountrySwitcher() {
   const container = document.getElementById("heroCountrySwitcher");
+  const desktopNav = document.getElementById("desktopNav");
   if (!container) return;
-  container.innerHTML = countryList
+  container.innerHTML = '<p>选择目标<br/>国家/地区</p>' + countryList
     .map((c) => {
       const isActive = c.code === activeCountry;
       return `<button class="country-chip${isActive ? " active" : ""}" data-country="${c.code}">
-      <span class="chip-code">${c.code.toLowerCase()}</span>
+      <span class="chip-code">${c.code}</span>
       <span>${c.name}</span>
     </button>`;
+    })
+    .join("");
+  desktopNav.innerHTML = countryList
+    .map((c) => {
+      const isActive = c.code === activeCountry;
+      return `<button class="nav-btn ${isActive ? "nav-btn-active" : ""}" data-country="${c.code}" data-scroll="program">${c.name}</button>`;
     })
     .join("");
   // Also render program section
@@ -672,6 +679,8 @@ document.addEventListener("click", function (e) {
   const navBtn = e.target.closest(".nav-btn");
   if (navBtn) {
     const section = navBtn.dataset.scroll;
+    const code = navBtn.dataset.country;
+    if (code) setActiveCountry(code);
     if (section) scrollToSection(section);
     return;
   }
@@ -734,5 +743,5 @@ function hidelay() {
 }
 
 $("#main .sameform").Form({
-    form: "#main .sameform",
+  form: "#main .sameform",
 });

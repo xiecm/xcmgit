@@ -63,9 +63,7 @@
 }
 
 /* ===== Reset ===== */
-*,
-*::before,
-*::after {
+c {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -80,6 +78,7 @@ body {
   color: var(--foreground);
   line-height: 1.6;
   min-height: 100vh;
+  min-width: 1200px;
 }
 img,
 svg {
@@ -191,7 +190,7 @@ button {
 .nav-links {
   display: none;
   align-items: center;
-  gap: 0.25rem;
+  gap: 1.25rem;
 }
 @media (min-width: 768px) {
   .nav-links {
@@ -209,12 +208,13 @@ button {
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--muted-foreground);
+  color: var(--primary-40);
   transition: all 0.15s;
 }
-.nav-btn:hover {
+.nav-btn:hover,
+.nav-btn.nav-btn-active {
   background: var(--bg-secondary);
-  color: var(--foreground);
+  color: var(--primary);
 }
 .header-cta {
   border-radius: 0.375rem;
@@ -377,44 +377,58 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.75rem;
-  /* margin-top: 2.5rem; */
+  margin-top: 10px;
   margin-bottom: 2.3rem;
-  padding-top: 10px;
+  padding: 18px 0 18px 48px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+.country-switcher p {
+  font-size: 20px;
+  color: #333333;
+  line-height: 28px;
+  font-weight: bold;
+  margin-right: 60px;
 }
 .country-chip {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  border-radius: var(--radius-xl);
-  border: 2px solid var(--border);
-  padding: 0.95rem 2.45rem;
-  font-size: 0.875rem;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  /* padding: 0.95rem 2.45rem; */
+  font-size: 20px;
   font-weight: 600;
   color: var(--foreground);
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(var(--primary-20),var(--bg-secondary-50));
   transition: all 0.2s;
+  height: 60px;
+  width: 140px;
+  justify-content: center;
+  line-height: 20px;
 }
-.country-chip:hover {
-  border-color: rgba(37, 99, 235, 0.4);
-  box-shadow: var(--shadow-md);
-  background: #fff;
-}
-.country-chip.active {
+.country-chip.active,.country-chip:hover {
   border-color: var(--primary);
   background: var(--primary);
   color: var(--primary-foreground);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
 }
+
 .country-chip .chip-code {
-  font-size: 0.75rem;
-  opacity: 0.7;
+  font-size: 18px;
+  line-height: 18px;
+  opacity: 0.2;
+  color: #316bff;
+  font-weight: bold;
 }
+.country-chip:hover .chip-code ,
 .country-chip.active .chip-code {
-  opacity: 1;
+  color: #ffffff;
 }
 
 /* ===== Section Styles ===== */
@@ -558,6 +572,9 @@ button {
 }
 
 /* ===== Program Section ===== */
+#program {
+  margin-top: -120px;
+}
 .program-card {
   border-radius: var(--radius-3xl);
   border: 1px solid var(--border);
@@ -1491,7 +1508,6 @@ button {
 .mentors-grid .teac .tbtn {
   font-weight: bold;
   background-color: var(--primary);
-  /* border: 1px solid #ff123f; */
   font-size: 16px;
   color: #ffffff;
   width: 100px;
@@ -1502,12 +1518,7 @@ button {
   transform: translateX(-50%);
   border-radius: 40px;
   cursor: pointer;
-  transition: all 0.3s;
-}
-.mentors-grid .teac .tbtn:hover {
-  color: #ff123f;
-  background: #ffffff;
-  transition: all 0.3s;
+  transition: all 0.15s;
 }
 .mentors-grid .teac span {
   font-weight: bold;
@@ -1528,9 +1539,9 @@ button {
 .mentors-grid .teac span.spanleft::before {
   content: "";
   background: url(css_sprites.png) no-repeat;
-    background-position:  -2280px -0px ;
-    width: 26px;
-    height: 26px;
+  background-position: -2280px -0px;
+  width: 26px;
+  height: 26px;
   position: absolute;
   left: -28px;
   top: 50%;
@@ -1652,7 +1663,7 @@ button {
   transform: translateY(-2px);
   background-color: rgba(255, 255, 255, 0.15);
 }
-.cta-buttons{
+.cta-buttons {
   display: flex;
   gap: 30px;
   margin-top: 63px;

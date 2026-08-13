@@ -130,7 +130,7 @@
           <button class="nav-btn" data-scroll="timeline">服务流程</button>
           <button class="nav-btn" data-scroll="mentors">导师团队</button>
         </nav>
-        <button class="header-cta" onclick="scrollToSection('program')">免费咨询</button>
+        <button class="header-cta" onclick="leyubtn()">免费咨询</button>
       </div>
     </header>
 
@@ -154,6 +154,7 @@
     <section id="program" class="section section-alt">
       <div class="container">
         <div class="country-switcher anim-up-sm visible" style="transition-delay:0.24s" id="heroCountrySwitcher">
+
           <!-- filled by JS -->
         </div>
         <div class="section-header">
@@ -238,7 +239,7 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="hero-btn-arrow" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
-            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">探索国家产品</button>
+            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">了解产品详情</button>
         </div>
       </div>
     </section>
@@ -260,7 +261,7 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="hero-btn-arrow" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
-            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">探索国家产品</button>
+            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">了解产品详情</button>
         </div>
       </div>
     </section>
@@ -283,7 +284,7 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="hero-btn-arrow" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
-            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">探索国家产品</button>
+            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">了解产品详情</button>
         </div>
       </div>
     </section>
@@ -292,8 +293,7 @@
     <section id="mentors" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">多V1环抱式服务</h2>
-          <p class="section-desc">覆盖留学前中后全程</p>
+          <h2 class="section-title">多V1环抱式服务 覆盖留学前中后全程</h2>
         </div>
         <div class="mentors-grid" id="mentorsGrid">
           <div class="teac teac1">
@@ -379,7 +379,7 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="hero-btn-arrow" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
-            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">探索国家产品</button>
+            </svg></button><button data-slot="button" class="hero-btn-secondary" onclick="leyubtn()">了解产品详情</button>
         </div>
       </div>
     </section>
@@ -388,82 +388,82 @@
     <section id="bonus" class="section">
       <div class="container">
         <div class="bonus-grid">
-            <div>
-              <h2 class="bonus-heading">开启你的名校申请之旅</span></h2>
-              <ul class="bonus-list">
-                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg><span>职涯引领留学，规划升学蓝图</span></li>
-                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg><span>智慧赋能申请，全面提升背景</span></li>
-                <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg><span>中英思维融合，精塑理想形象</span></li>
-              </ul>
-            </div>
-            <div class="bonus-card">
-              <div class="bonus-card-inner">
-                <h2 class="cta-title">立即规划全球名校申请方案</h2>
-                <p class="cta-subtitle">专属顾问1V1沟通，为你定制智领名校方案</p>
-                <form class="cta-ctaForm sameform">
-                  <input type="hidden" class="partId" name="partId" value="baoyan">
-                  <input type="hidden" class="partName" name="partName" value="保研产品【集团】-免费规划">
-                  <div class="form-group">
-                    <div class="form-row">
-                      <div class="form-col"><input type="text" name="username" placeholder="您的姓名" class="form-input">
-                      </div>
-                      <div class="form-col"><input type="tel" name="userphone" placeholder="联系电话" class="form-input">
-                      </div>
+          <div>
+            <h2 class="bonus-heading">开启你的名校申请之旅</span></h2>
+            <ul class="bonus-list">
+              <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg><span>职涯引领留学，规划升学蓝图</span></li>
+              <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg><span>智慧赋能申请，全面提升背景</span></li>
+              <li class="bonus-list-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" class="bonus-list-icon" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg><span>中英思维融合，精塑理想形象</span></li>
+            </ul>
+          </div>
+          <div class="bonus-card">
+            <div class="bonus-card-inner">
+              <h2 class="cta-title">立即规划全球名校申请方案</h2>
+              <p class="cta-subtitle">专属顾问1V1沟通，为你定制智领名校方案</p>
+              <form class="cta-ctaForm sameform">
+                <input type="hidden" class="partId" name="partId" value="baoyan">
+                <input type="hidden" class="partName" name="partName" value="保研产品【集团】-免费规划">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="form-col"><input type="text" name="username" placeholder="您的姓名" class="form-input">
+                    </div>
+                    <div class="form-col"><input type="tel" name="userphone" placeholder="联系电话" class="form-input">
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="form-row">
-                      <div class="form-col">
-                        <select name="usercountry" id="" class="form-input form-country">
-                          <option value="">意向国家/地区</option>
-                          <option value="美国">美国</option>
-                          <option value="澳洲">澳洲</option>
-                          <option value="加拿大">加拿大</option>
-                          <option value="澳大利亚">澳大利亚</option>
-                          <option value="新西兰">新西兰</option>
-                          <option value="中国香港">中国香港</option>
-                          <option value="中国澳门">中国澳门</option>
-                          <option value="新加坡">新加坡</option>
-                          <option value="马来西亚">马来西亚</option>
-                          <option value="泰国">泰国</option>
-                          <option value="日本">日本</option>
-                          <option value="韩国">韩国</option>
-                          <option value="意大利">意大利</option>
-                          <option value="西班牙">西班牙</option>
-                          <option value="德国">德国</option>
-                          <option value="法国">法国</option>
-                          <option value="爱尔兰">爱尔兰</option>
-                          <option value="荷兰">荷兰</option>
-                          <option value="瑞士">瑞士</option>
-                          <option value="北欧">北欧</option>
-                          <option value="其他">其他</option>
-                        </select>
-                      </div>
-                      <div class="form-col">
-                        <input type="text" placeholder="所在城市" name="usercity" class="form-input">
-                      </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="form-col">
+                      <select name="usercountry" id="" class="form-input form-country">
+                        <option value="">意向国家/地区</option>
+                        <option value="美国">美国</option>
+                        <option value="澳洲">澳洲</option>
+                        <option value="加拿大">加拿大</option>
+                        <option value="澳大利亚">澳大利亚</option>
+                        <option value="新西兰">新西兰</option>
+                        <option value="中国香港">中国香港</option>
+                        <option value="中国澳门">中国澳门</option>
+                        <option value="新加坡">新加坡</option>
+                        <option value="马来西亚">马来西亚</option>
+                        <option value="泰国">泰国</option>
+                        <option value="日本">日本</option>
+                        <option value="韩国">韩国</option>
+                        <option value="意大利">意大利</option>
+                        <option value="西班牙">西班牙</option>
+                        <option value="德国">德国</option>
+                        <option value="法国">法国</option>
+                        <option value="爱尔兰">爱尔兰</option>
+                        <option value="荷兰">荷兰</option>
+                        <option value="瑞士">瑞士</option>
+                        <option value="北欧">北欧</option>
+                        <option value="其他">其他</option>
+                      </select>
+                    </div>
+                    <div class="form-col">
+                      <input type="text" placeholder="所在城市" name="usercity" class="form-input">
                     </div>
                   </div>
-                  <div class="form-submit submit"><i class="ri-send-plane-line"></i>免费规划</div>
-                </form>
-              </div>
+                </div>
+                <div class="form-submit submit"><i class="ri-send-plane-line"></i>免费规划</div>
+              </form>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
@@ -474,9 +474,9 @@
       </div>
       <style>
         #main .pinxuanbox {
-          background: var(--primary);
+          background: url(pinxuan.jpg) no-repeat;
           background-position: center;
-          height: auto;
+          height: 510px;
           padding: 40px 0;
         }
 
