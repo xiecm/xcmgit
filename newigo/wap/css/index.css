@@ -62,7 +62,7 @@ i {
 .icon_logo {
     width: 3.5667rem;
     height: 1.1rem;
-    background: url(/logo.png)no-repeat;
+    background: url(../logo.png)no-repeat;
     background-size: 100%;
     margin-right: 0.2133rem;
 }
