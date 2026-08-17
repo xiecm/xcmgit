@@ -1,398 +1,411 @@
 /* ========== reset ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
 }
 
 body {
-    background: linear-gradient(180deg, #e3edff  , #ffffff 70%);
-    color: #333;
-    -webkit-font-smoothing: antialiased;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  z-index: 1;
+  position: relative;
 }
-
+body:before {
+  width: 130%;
+  height: 12.9rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #e3edff;
+  z-index: -1;
+  border-radius: 0 0 4.4rem 4.4rem;
+  transform: translateX(-50%);
+}
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 i {
-    font-style: normal;
+  font-style: normal;
 }
 
 .page {
-    width: 100%;
-    min-height: 100vh;
-    padding-bottom: 0.5333rem;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 0.5333rem;
 }
 
 /* ========== icon 雪碧图公共 ========== */
 .icon {
-    display: inline-block;
-    background-image: url(../css_sprites.png);
-    background-repeat: no-repeat;
-    /* 雪碧图原图 1755x106，按 640/750 缩放 */
-    background-size: 37.44rem 2.2613rem;
-    vertical-align: middle;
+  display: inline-block;
+  background-image: url(../css_sprites.png);
+  background-repeat: no-repeat;
+  /* 雪碧图原图 1755x106，按 640/750 缩放 */
+  background-size: 37.44rem 2.2613rem;
+  vertical-align: middle;
 }
 
 /* ========== header ========== */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 2.1333rem;
-    padding: 0 0.4267rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.1333rem;
+  padding: 0 0.6267rem;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon_logo {
-    width: 3.5667rem;
-    height: 1.1rem;
-    background: url(../logo.png)no-repeat;
-    background-size: 100%;
-    margin-right: 0.2133rem;
+  width: 3.5667rem;
+  height: 1.1rem;
+  background: url(../logo.png) no-repeat;
+  background-size: 100%;
+  margin-right: 0.2133rem;
 }
 
 .logo-text {
-    font-size: 0.5973rem;
-    font-weight: 600;
-    color: #1a1a1a;
+  font-size: 0.5973rem;
+  font-weight: 600;
+  color: #1a1a1a;
 }
 
 .tel {
-    display: flex;
-    align-items: center;
-    font-size: 0.5rem;
-    color: #333333;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0.2rem 0.3rem;
-    font-weight: bold;
-    border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2rem 0.3rem;
+  font-weight: bold;
+  border-radius: 1rem;
 }
 
 .icon_phone {
-    width: 0.64rem;
-    height: 0.6827rem;
-    margin-right: 0.3067rem;
-    background-position: -36.8rem 0;
+  width: 0.64rem;
+  height: 0.6827rem;
+  margin-right: 0.3067rem;
+  background-position: -36.8rem 0;
 }
 
 .header-right {
-    display: flex;
-    align-items: center;
-    gap: 0.8333rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8333rem;
 }
 
 .icon_search {
-    width: 0.8533rem;
-    height: 0.896rem;
-    background-position: -34.88rem 0;
+  width: 0.8533rem;
+  height: 0.896rem;
+  background-position: -34.88rem 0;
 }
 
 .icon_menu {
-    width: 1.0667rem;
-    height: 0.896rem;
-    background-position: -35.7333rem 0;
+  width: 1.0667rem;
+  height: 0.896rem;
+  background-position: -35.7333rem 0;
 }
 
 /* ========== tabs ========== */
 .tabs {
-    display: flex;
-    align-items: center;
-    padding: 0.64rem 0.4267rem 0.4267rem;
+  display: flex;
+  align-items: center;
+  padding: 0.64rem 0.6267rem 0.4267rem;
 }
 
 .tab {
-    position: relative;
-    font-size: 0.65rem;
-    color: #666;
-    margin-right: 0.7467rem;
-    padding-bottom: 0.2233rem;
+  position: relative;
+  font-size: 0.65rem;
+  color: #666;
+  margin-right: 0.7467rem;
+  padding-bottom: 0.2233rem;
 }
 
 .tab.active {
-    font-size: 0.8533rem;
-    font-weight: 700;
-    color: #1a1a1a;
+  font-size: 0.8533rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .tab.active::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 0.74rem;
-    height: 0.15rem;
-    background: linear-gradient(to right,#c1d5ff,#4986ff);
-    border-radius: 0.0533rem;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0.74rem;
+  height: 0.15rem;
+  background: linear-gradient(to right, #c1d5ff, #4986ff);
+  border-radius: 0.0533rem;
 }
 
 /* ========== 快捷入口卡片 ========== */
 .quick-entry {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0.6267rem;
-    margin-top: 0.5133rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.6267rem;
+  margin-top: 0.5133rem;
 }
 
 .entry-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: flex-end;
-    width: 3.4133rem;
-    height: 2.2613rem;
-    /* box-shadow: 0 0.1067rem 0.32rem rgba(43, 125, 233, 0.08); */
-    padding-bottom: 0.3133rem;
-    /* overflow: hidden; */
-    background-image: url(../css_sprites.png);
-    background-repeat: no-repeat;
-    background-size: 37.44rem 2.2613rem;
-    padding-left: 0.6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-end;
+  width: 3.4133rem;
+  height: 2.2613rem;
+  /* box-shadow: 0 0.1067rem 0.32rem rgba(43, 125, 233, 0.08); */
+  padding-bottom: 0.3133rem;
+  /* overflow: hidden; */
+  background-image: url(../css_sprites.png);
+  background-repeat: no-repeat;
+  background-size: 37.44rem 2.2613rem;
+  padding-left: 0.6rem;
 }
 
 .entry-schools {
-    background-position: 0 0;
+  background-position: 0 0;
 }
 
 .entry-majors {
-    background-position: -3.4133rem 0;
+  background-position: -3.4133rem 0;
 }
 
 .entry-cases {
-    background-position: -6.8267rem 0;
+  background-position: -6.8267rem 0;
 }
 
 .entry-visits {
-    background-position: -10.24rem 0;
+  background-position: -10.24rem 0;
 }
 
 .entry-card .icon_schools,
 .entry-card .icon_majors,
 .entry-card .icon_cases,
 .entry-card .icon_visits {
-    position: absolute;
-    top: -0.4867rem;
-    right: 0.3133rem;
+  position: absolute;
+  top: -0.4867rem;
+  right: 0.3133rem;
 }
 
 .entry-name {
-    position: relative;
-    z-index: 1;
-    font-size: 0.512rem;
-    font-weight: bold;
-    color: #1a1a1a;
+  position: relative;
+  z-index: 1;
+  font-size: 0.512rem;
+  font-weight: bold;
+  color: #1a1a1a;
 }
 
 /* ========== banner ========== */
 .banner {
-    position: relative;
-    margin: 0.7333rem 0.6267rem 0;
-    height: 6.28967rem;
-    border-radius: 0.32rem;
-    overflow: hidden;
+  position: relative;
+  margin: 0.7333rem 0.6267rem 0;
+  height: 6.28967rem;
+  border-radius: 0.32rem;
+  overflow: hidden;
 }
 
 .banner-slider,
 .banner-slide {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .banner-slide {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto ;
+  background-size: 100% auto;
   display: block;
-      width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-
 .banner-dots {
-    position: absolute;
-    left: 0.7rem;
-    bottom: 0.52rem;
-    /* transform: translateX(-50%); */
-    display: flex;
-    gap: 0.1493rem;
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.52rem;
+  /* transform: translateX(-50%); */
+  display: flex;
+  gap: 0.1493rem;
 }
 
 .dot {
-    width: 0.5267rem;
-    height: 0.2133rem;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 0.1067rem;
+  width: 0.5267rem;
+  height: 0.2133rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.1067rem;
 }
 
 .dot.active {
-    /* width: 0.6267rem; */
-    /* border-radius: 0.1067rem; */
-    background: #fff;
+  /* width: 0.6267rem; */
+  /* border-radius: 0.1067rem; */
+  background: #fff;
 }
 
 /* ========== 功能入口 ========== */
 .func-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 0.84rem;
-    padding: 1.1467rem 0.5133rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 0.84rem;
+  padding: 1.1467rem 0.5133rem;
 }
 
 .func-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .func-item .icon {
-    margin-bottom: 0.3533rem;
+  margin-bottom: 0.3533rem;
 }
 
 .func-item span {
-    font-size: 0.5rem;
-    color: #000000;
+  font-size: 0.5rem;
+  color: #000000;
 }
 
 /* ========== 雪碧图图标位置 ========== */
 .icon.icon_schools_bg {
-    background-position: 0 0;
-    width: 3.4133rem;
-    height: 2.2613rem;
+  background-position: 0 0;
+  width: 3.4133rem;
+  height: 2.2613rem;
 }
 
 .icon.icon_majors_bg {
-    background-position: -3.4133rem 0;
-    width: 3.4133rem;
-    height: 2.2613rem;
+  background-position: -3.4133rem 0;
+  width: 3.4133rem;
+  height: 2.2613rem;
 }
 
 .icon.icon_cases_bg {
-    background-position: -6.8267rem 0;
-    width: 3.4133rem;
-    height: 2.2613rem;
+  background-position: -6.8267rem 0;
+  width: 3.4133rem;
+  height: 2.2613rem;
 }
 
 .icon.icon_visits_bg {
-    background-position: -10.24rem 0;
-    width: 3.4133rem;
-    height: 2.2613rem;
+  background-position: -10.24rem 0;
+  width: 3.4133rem;
+  height: 2.2613rem;
 }
 
 .icon.icon_fee {
-    background-position: -13.6533rem 0;
-    width: 1.4507rem;
-    height: 1.4933rem;
+  background-position: -13.6533rem 0;
+  width: 1.4507rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_live {
-    background-position: -15.104rem 0;
-    width: 1.472rem;
-    height: 1.4933rem;
+  background-position: -15.104rem 0;
+  width: 1.472rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_teachers {
-    background-position: -16.576rem 0;
-    width: 1.472rem;
-    height: 1.4933rem;
+  background-position: -16.576rem 0;
+  width: 1.472rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_about {
-    background-position: -18.048rem 0;
-    width: 1.4933rem;
-    height: 1.4933rem;
+  background-position: -18.048rem 0;
+  width: 1.4933rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_career {
-    background-position: -19.5413rem 0;
-    width: 1.5147rem;
-    height: 1.4933rem;
+  background-position: -19.5413rem 0;
+  width: 1.5147rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_rank {
-    background-position: -21.056rem 0;
-    width: 1.6213rem;
-    height: 1.4933rem;
+  background-position: -21.056rem 0;
+  width: 1.6213rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_gpa {
-    background-position: -22.6773rem 0;
-    width: 1.7493rem;
-    height: 1.4933rem;
+  background-position: -22.6773rem 0;
+  width: 1.7493rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_smart {
-    background-position: -24.4267rem 0;
-    width: 1.792rem;
-    height: 1.4933rem;
+  background-position: -24.4267rem 0;
+  width: 1.792rem;
+  height: 1.4933rem;
 }
 
 .icon.icon_profile {
-    background-position: -26.2187rem 0;
-    width: 1.4933rem;
-    height: 1.472rem;
+  background-position: -26.2187rem 0;
+  width: 1.4933rem;
+  height: 1.472rem;
 }
 
 .icon.icon_ielts {
-    background-position: -27.712rem 0;
-    width: 1.536rem;
-    height: 1.472rem;
+  background-position: -27.712rem 0;
+  width: 1.536rem;
+  height: 1.472rem;
 }
 
 .icon.icon_schools {
-    background-position: -29.248rem 0;
-    width: 1.408rem;
-    height: 1.4507rem;
+  background-position: -29.248rem 0;
+  width: 1.408rem;
+  height: 1.4507rem;
 }
 
 .icon.icon_visits {
-    background-position: -30.656rem 0;
-    width: 1.408rem;
-    height: 1.4507rem;
+  background-position: -30.656rem 0;
+  width: 1.408rem;
+  height: 1.4507rem;
 }
 
 .icon.icon_majors {
-    background-position: -32.064rem 0;
-    width: 1.408rem;
-    height: 1.4507rem;
+  background-position: -32.064rem 0;
+  width: 1.408rem;
+  height: 1.4507rem;
 }
 
 .icon.icon_cases {
-    background-position: -33.472rem 0;
-    width: 1.408rem;
-    height: 1.4507rem;
+  background-position: -33.472rem 0;
+  width: 1.408rem;
+  height: 1.4507rem;
 }
 
 .icon.icon_search {
-    background-position: -34.88rem 0;
-    width: 0.8533rem;
-    height: 0.896rem;
+  background-position: -34.88rem 0;
+  width: 0.8533rem;
+  height: 0.896rem;
 }
 
 .icon.icon_menu {
-    background-position: -35.7333rem 0;
-    width: 1.0667rem;
-    height: 0.896rem;
+  background-position: -35.7333rem 0;
+  width: 1.0667rem;
+  height: 0.896rem;
 }
 
 .icon.icon_phone {
-    background-position: -36.8rem 0;
-    width: 0.64rem;
-    height: 0.6827rem;
+  background-position: -36.8rem 0;
+  width: 0.64rem;
+  height: 0.6827rem;
 }
