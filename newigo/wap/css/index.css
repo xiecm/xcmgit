@@ -16,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   z-index: 1;
   position: relative;
+  overflow-x: hidden;
 }
 body:before {
   width: 130%;
@@ -28,6 +29,10 @@ body:before {
   z-index: -1;
   border-radius: 0 0 4.4rem 4.4rem;
   transform: translateX(-50%);
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 a {
   text-decoration: none;
@@ -124,13 +129,13 @@ i {
 }
 
 /* ========== tabs ========== */
-.tabs {
+.recommended_tabs {
   display: flex;
   align-items: center;
   padding: 0.64rem 0.6267rem 0.4267rem;
 }
 
-.tab {
+.recommended_tab {
   position: relative;
   font-size: 0.65rem;
   color: #666;
@@ -138,13 +143,13 @@ i {
   padding-bottom: 0.2233rem;
 }
 
-.tab.active {
+.recommended_tab.active {
   font-size: 0.8533rem;
   font-weight: 700;
   color: #1a1a1a;
 }
 
-.tab.active::after {
+.recommended_tab.active::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -408,4 +413,2093 @@ i {
   background-position: -36.8rem 0;
   width: 0.64rem;
   height: 0.6827rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#main {
+  font-family: "AlibabaPuHuiTiRegular";
+  font-size: 0.7rem;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  background: #f5f5f5 url(https://m.igo.cn/migonew/version/newImage/body_bg.png) no-repeat;
+  background-size: 100%;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+#main img {
+  pointer-events: none;
+}
+#main a {
+  pointer-events: auto;
+}
+@font-face {
+  font-family: "impact";
+  src: url(../font/impact.ttf);
+}
+#main input,
+#main select,
+#main textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+#main i,
+#main em {
+  font-style: normal;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table td {
+  word-break: break-all;
+  word-wrap: break-word;
+  border-right: 1px solid #939598;
+  border-bottom: 1px solid #939598;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.dis-f {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dis-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dis-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fxedHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0.63rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/body_bg.png) no-repeat;
+  background-size: 100%;
+  z-index: 10;
+  padding-bottom: 0.5rem;
+}
+.head-top {
+  height: 2.4rem;
+}
+.head-top .head-top-left > img {
+  height: 1.13rem;
+  margin-right: 0.73rem;
+}
+
+.head-top .mid {
+  font-size: 0.55rem;
+  font-family: "AlibabaPuHuiTiBold";
+  color: #ffffff;
+  letter-spacing: -0.03rem;
+}
+.head-top .mid a {
+  color: #ffffff;
+}
+.head-top .mid img {
+  height: 0.63rem;
+  margin-right: 0.28rem;
+}
+.head-top .head-top-right img {
+  height: 0.9rem;
+}
+.head-top .head-top-right .more {
+  margin-left: 0.7rem;
+}
+.fxedHeader .recommended_tab {
+  color: #ffffff;
+  font-size: 0.65rem;
+}
+.fxedHeader .recommended_tab > div {
+  margin-right: 0.5rem;
+  line-height: 0.65rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+  font-family: "AlibabaPuHuiTiMedium";
+}
+.fxedHeader .recommended_tab > div.active {
+  /* font-family: "AlibabaPuHuiTiBold"; */
+}
+.fxedHeader .recommended_tab > div.active::after {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background: #e597a7;
+  border-radius: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  width: 16rem;
+  height: 10.72rem;
+  padding: 4.4rem 0.63rem 0;
+}
+
+.head-banner {
+  height: 6.25rem;
+  box-shadow: 0.05rem 0.09rem 0.65rem 0rem rgba(204, 204, 204, 0.2);
+  border-radius: 0.43rem;
+  overflow: hidden;
+}
+.head-banner .swiper-slide {
+  width: 100%;
+  height: 6.25rem;
+}
+.head-banner .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.head-banner .swiper-slide a img {
+  width: 100%;
+}
+.head-banner .swiper-pagination {
+  bottom: 0.4rem;
+}
+.head-banner .swiper-pagination-bullet {
+  width: 0.48rem;
+  height: 0.18rem;
+  background-color: #ffffff;
+  border-radius: 0.07rem;
+  opacity: 0.6;
+  margin: 0 0.08rem !important;
+}
+.head-banner .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+.recommended-index > div {
+  display: none;
+}
+.recommended-index > div.active {
+  display: block;
+}
+nav {
+  padding: 0.98rem 0.63rem 0.6rem;
+}
+nav .sameLi {
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+nav .sameLi li {
+  width: 3rem;
+}
+nav .sameLi li:nth-child(1),
+nav .sameLi li:nth-child(2),
+nav .sameLi li:nth-child(3),
+nav .sameLi li:nth-child(4) {
+  margin-bottom: 0.57rem;
+}
+nav .sameLi li div {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 auto 0.4rem;
+  display: block;
+  background-size: 94%;
+  background-repeat: no-repeat;
+  border-radius: 2.2rem;
+  background-color: #ff585a;
+  background-position: center center;
+}
+nav .sameLi li p {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #1a1a1a;
+  text-align: center;
+  position: relative;
+}
+nav .sameLi li p.recommendIcon::after {
+  content: "";
+  height: 0.74rem;
+  width: 1.44rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/recommend_hk.png) no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  position: absolute;
+  right: -0.55rem;
+  top: -0.4rem;
+}
+
+nav .navLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  display: none;
+}
+
+nav .navLay .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  width: 90%;
+  padding: 0.8rem 1.15rem 0.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+nav .navLay .content > p {
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+  font-family: "AlibabaPuHuiTiBold";
+  text-align: center;
+  color: #333333;
+  padding-bottom: 0.65rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+nav .navLay .content > p::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1rem;
+  height: 2px;
+  background-color: #ff4141;
+  transform: translate3d(-50%, -50%, 0);
+}
+nav .navLay .content ul {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+nav .navLay .content li {
+  width: 33.33%;
+  margin-bottom: 0.5rem;
+}
+nav .other {
+  height: 6.43rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+nav .other li {
+  padding: 0.53rem 0 0 0.65rem;
+  width: 4.5rem;
+  height: 6.43rem;
+  background-color: #ffffff;
+  border-radius: 0.21rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav .other li::after {
+  content: "";
+  width: 5.1rem;
+  height: 4.8rem;
+  background: linear-gradient(98deg, #ffdbdb, transparent);
+  position: absolute;
+  top: -2.3rem;
+  left: -1rem;
+  border-radius: 0 0 4rem 0;
+  z-index: -1;
+}
+nav .other li div {
+  font-size: 0.55rem;
+  font-family: "AlibabaPuHuiTiBold";
+  line-height: 0.55rem;
+  color: #333333;
+  margin-bottom: 0.4rem;
+}
+
+nav .other li div span {
+  width: 0.65rem;
+  height: 0.65rem;
+  box-shadow: 0.11rem 0.2rem 0.45rem 0rem rgba(246, 68, 77, 0.48);
+  border-radius: 0.65rem;
+  margin-left: 0.28rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/navMore.png) no-repeat;
+  background-size: 90%;
+  padding: 0.04rem;
+  background-color: #ff595a;
+  background-position: center center;
+}
+nav .other li div span img {
+  width: 100%;
+}
+nav .other li p {
+  font-size: 0.51rem;
+  line-height: 0.74rem;
+  color: #4d4d4d;
+}
+nav .other li p.recommendIcon::after {
+  content: "";
+  height: 0.74rem;
+  width: 1.44rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/recommend.png) no-repeat;
+  background-size: auto 100%;
+  display: inline-block;
+  position: relative;
+  left: 0.2rem;
+  top: -0.1rem;
+}
+nav .other li:nth-child(2) p {
+  line-height: 0.9rem;
+}
+nav .other li:nth-child(3) {
+  height: 3.43rem;
+}
+
+nav .other li:nth-child(4),
+nav .other li:nth-child(5) {
+  height: 1.3rem;
+  padding: 0;
+}
+nav .other li:nth-child(4) a,
+nav .other li:nth-child(5) a {
+  height: 100%;
+  padding-left: 0.65rem;
+}
+nav .other li:nth-child(4) a div,
+nav .other li:nth-child(5) a div {
+  margin: 0;
+}
+nav .other li:nth-child(4)::after,
+nav .other li:nth-child(5)::after {
+  top: -3.6rem;
+  left: -1rem;
+}
+nav .other li:nth-child(3) p {
+  line-height: 0.8rem;
+}
+
+.group {
+  height: auto;
+  background: url(https://m.igo.cn/migonew/version/newImage/group_bg.png) no-repeat;
+  background-size: 100%;
+  padding: 0.85rem 0.65rem 1.94rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.group > div {
+  width: 33.33%;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #333333;
+  height: 1.73rem;
+  position: relative;
+  align-items: flex-end;
+  padding-bottom: 0.3rem;
+}
+.group > div:nth-child(1),
+.group > div:nth-child(2),
+.group > div:nth-child(3) {
+  margin-bottom: 0.4rem;
+}
+
+.group > div span {
+  font-family: "impact";
+  font-size: 1.71rem;
+  line-height: 1.43rem;
+  color: #ff595a;
+  position: absolute;
+  left: 0;
+  bottom: 0.3rem;
+  opacity: 0.1;
+}
+
+.group > div::after {
+  content: "";
+  width: 0.88rem;
+  height: 0.05rem;
+  background-color: #ff595a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#index main {
+  margin-top: -1rem;
+}
+.samepart {
+  padding: 0.83rem 0.63rem;
+  background: #ffffff;
+  margin-bottom: 0.23rem;
+  border-radius: 0.53rem;
+}
+.samepart .same-t {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+.samepart .same-t .txt {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #333333;
+  font-family: "AlibabaPuHuiTiBold";
+}
+
+.samepart .same-t .more {
+  font-size: 0.51rem;
+  line-height: 0.51rem;
+  color: #666666;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.samepart .same-t .tabbox {
+  width: auto;
+  background-color: #f0f0f0;
+  border-radius: 0.13rem;
+  margin-right: 1.95rem;
+  padding: 0.13rem;
+  align-items: stretch;
+}
+.samepart .same-t .tab {
+  width: auto;
+  font-size: 0.55rem;
+  padding: 0 0.2rem;
+  color: #1a1a1a;
+  height: 1.1rem;
+}
+.samepart .same-t .tab.active {
+  background-color: #ff595a;
+  border-radius: 0.13rem;
+  color: #ffffff;
+}
+.samepart .leyubtn {
+  width: 4.72rem;
+  height: 1.5rem;
+  background-image:
+    linear-gradient(#ff595a, #ff595a), linear-gradient(#000000, #000000);
+  background-blend-mode: normal, normal;
+  box-shadow: 0.11rem 0.2rem 0.45rem 0rem rgba(246, 68, 77, 0.48);
+  border-radius: 0.74rem;
+  font-size: 0.55rem;
+  color: #ffffff;
+}
+.xt_zixun {
+  background: none;
+  padding: 0 0.63rem;
+}
+.xt_zixun > div {
+  background: #ffffff;
+  border-radius: 0.21rem;
+  padding: 0 0.55rem 0.55rem;
+}
+.xt_zixun .xt_zixun_tabs {
+  overflow-x: auto;
+  margin-bottom: 0.5rem;
+}
+.xt_zixun .xt_zixun_tabs > li {
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  color: #333333;
+  padding: 0.6rem 0.4rem 0.4rem;
+  position: relative;
+}
+.xt_zixun .xt_zixun_tabs > li:nth-child(1) {
+  padding-left: 0;
+}
+.xt_zixun .xt_zixun_tabs > li:last-child {
+  padding-right: 0;
+}
+.xt_zixun .xt_zixun_tabs > li.active {
+  font-family: "AlibabaPuHuiTiMedium";
+  color: #000000;
+}
+.xt_zixun .xt_zixun_tabs > li.active::after {
+  content: "";
+  width: 1.3rem;
+  height: 0.15rem;
+  background: #ff595a;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.1rem;
+}
+.xt_zixun .news_container > div {
+  padding-bottom: 0.38rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0.55rem;
+}
+.xt_zixun .news_container > div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.xt_zixun .news_container > div a {
+  align-items: flex-start;
+}
+.xt_zixun .news_container > div .txt {
+  width: calc(100% - 5rem);
+}
+.xt_zixun .news_container > div .txt p:nth-child(1) {
+  font-size: 0.55rem;
+  line-height: 0.8rem;
+  color: #333333;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 0.5rem;
+}
+
+.xt_zixun .news_container > div .txt p:nth-child(2) {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #999999;
+}
+.xt_zixun .news_container > div .img {
+  width: 4.3rem;
+  height: 2.6rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  border-radius: 0.13rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+.xt_zixun .news_container > div .img::after {
+  content: "";
+  width: 1rem;
+  height: 0.7rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/version/newsIcon.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+.xt_zixun .news_container > div .img.video::after {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/videoIcon.png);
+}
+.xt_zixun .news_container > div .img.dynamicNews::after {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/dynamicNews.png);
+}
+.xt_zixun .content > .getMore {
+  text-align: center;
+  color: #999999;
+  font-size: 0.55rem;
+  margin-top: 0.45rem;
+}
+.xt_zixun .loading-initial {
+  text-align: center;
+}
+.xt_zixun .loading-initial img {
+  width: 3rem;
+}
+.hotact ul {
+  overflow: auto;
+  height: 6.2rem;
+}
+.hotact ul::-webkit-scrollbar {
+  display: none;
+}
+.hotact ul > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  color: #adadad;
+}
+.hotact li {
+  width: 5.78rem;
+  margin-right: 0.43rem;
+  flex-shrink: 0;
+  height: 6.2rem;
+}
+.hotact li .img {
+  height: 3.5rem;
+  background-color: #eeeeee;
+  border-radius: 0.13rem;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+.hotact li .img img {
+  width: 100%;
+}
+.hotact li .img span {
+  width: 2.63rem;
+  height: 0.83rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0rem 0rem 0.09rem 0rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.47rem;
+  color: #ffffff;
+}
+.hotact li .img span i {
+  width: 0.15rem;
+  height: 0.15rem;
+  background-color: #ff123f;
+  margin-right: 0.15rem;
+  flex-shrink: 0;
+}
+.hotact li .img span i.green {
+  background-color: #79c211;
+}
+
+.hotact li .img .elite-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.6rem;
+  height: 1rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/eliteTag.png) no-repeat;
+  background-size: 100%;
+  color: #fff;
+  z-index: 5;
+}
+
+.hotact li .i_t {
+  font-size: 0.51rem;
+  line-height: 0.75rem;
+  height: 1.5rem;
+  color: #000000;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.hotact li .date {
+  font-size: 0.51rem;
+  line-height: 0.51rem;
+  color: #999999;
+  margin-top: 0.3rem;
+  letter-spacing: -0.03rem;
+}
+.hotact li:last-child {
+  width: 2.2rem;
+}
+.hotact li .more {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0.5px solid rgba(220, 220, 220, 0.8);
+  border-radius: 50%;
+  background-size: cover;
+  flex-shrink: 0;
+  line-height: 0.75rem;
+  font-size: 0.6rem;
+  color: #2d2b2b;
+  margin-right: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.product ul {
+  height: 8.73rem;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.product ul::-webkit-scrollbar {
+  display: none;
+}
+.product li {
+  width: 6.43rem;
+  height: 8.73rem;
+  background-color: #ffffff;
+  border-radius: 0.13rem;
+  border: solid 0.02rem #e5e5e5;
+  margin-right: 0.4rem;
+  padding: 0.2rem;
+  position: relative;
+}
+.product li:last-child {
+  margin-right: 0;
+}
+.product li .p-t {
+  width: 6rem;
+  height: 3.53rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.13rem;
+  padding: 0.5rem;
+  font-size: 0.51rem;
+  line-height: 0.75rem;
+  color: #4d4d4d;
+  font-family: "AlibabaPuHuiTiBold";
+  margin-bottom: 0.4rem;
+}
+.product li .p-t i {
+  font-size: 0.45rem;
+  font-weight: normal;
+  line-height: 0.55rem;
+  display: block;
+}
+/* .product li #cultivate_product {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/cultivate_product.png);
+}
+.product li #master_abroad_kaoyan {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/master_abroad_kaoyan.png);
+}
+.product li #gaokao_product {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/gaokao_product.png);
+}
+.product li #pkt {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/pkt.png);
+}
+.product li #ielts {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/ielts.png);
+}
+.product li #master_abroad_baoyan {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/master_abroad_baoyan.png);
+}
+.product li #us_igopackage_master {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/us_igopackage_master.png);
+}
+.product li #uk_igopackage {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/uk_igopackage.png);
+}
+.product li #Star_Path {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/Star_Path.png);
+}
+.product li #us_igopackage_undergraduate {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/us_igopackage_undergraduate.png);
+}
+.product li #enablement_programs {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/products/enablement_programs.png);
+} */
+.product li .fit {
+  align-items: flex-start;
+}
+.product li .fit p {
+  font-size: 0.51rem;
+  line-height: 0.7rem;
+  color: #666666;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ???�????????�??????€?????? */
+  -webkit-line-clamp: 3;
+}
+.product li .fit img {
+  width: 0.43rem;
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.2rem;
+  flex-shrink: 0;
+}
+.product li .leyubtn {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  transform: translateX(-50%);
+}
+
+.lxcase .same-t .tab {
+  padding: 0 0.45rem;
+}
+
+.lxcase .tabbox {
+  font-size: 0.55rem;
+}
+.lxcase .tabbox > div {
+  width: auto;
+  height: 1.1rem;
+  color: #333333;
+  border-radius: 0.52rem;
+  padding: 0 0.45rem;
+}
+
+.lxcase .tabcontent .c_tab.active {
+  background-image:
+    linear-gradient(#ff595a, #ff595a), linear-gradient(#aa0022, #aa0022);
+  background-blend-mode: normal, normal;
+  box-shadow: 0.11rem 0.2rem 0.45rem 0rem rgba(246, 68, 77, 0.48);
+  color: #ffffff;
+}
+.lxcase .tabcontent .tabbox {
+  margin-bottom: 0.4rem;
+}
+
+.lxcase .tabcontent > div {
+  display: none;
+}
+.lxcase .tabcontent > div.active {
+  display: block;
+}
+.lxcase .offer {
+  height: 7.7rem;
+  background-color: #f5f5f5;
+  box-shadow: 0rem 0.1rem 0.1rem 0rem rgba(6, 0, 1, 0.06);
+  border-radius: 0.21rem;
+  border: solid 0.02rem #e5e5e5;
+}
+.lxcase .offer .swiper-wrapper > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  color: #adadad;
+  line-height: 7.7rem;
+}
+
+.lxcase .offer .swiper-slide {
+  width: 100%;
+  height: 7.7rem;
+  padding: 0.63rem;
+  align-items: flex-start;
+}
+.lxcase .offer .offerImg {
+  width: 4.28rem;
+  height: 5.58rem;
+  background-color: #ffffff;
+  border-radius: 0.13rem;
+  border: solid 0.02rem #ffd8e0;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.lxcase .offer .offerImg img {
+  width: 100%;
+}
+.lxcase .offer .offerRight > p {
+  font-size: 0.55rem;
+  line-height: 0.9rem;
+  color: #4d4d4d;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ???�????????�??????€?????? */
+  -webkit-line-clamp: 2;
+  margin-bottom: 0.3rem;
+  font-family: "AlibabaPuHuiTiBold";
+}
+.lxcase .offer .offerRight > div p {
+  font-size: 0.51rem;
+  line-height: 0.51rem;
+  letter-spacing: 0rem;
+  color: #4d4d4d;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lxcase .offer .leyubtn {
+  margin-top: 0.65rem;
+}
+
+.lxcase .swiper-pagination-bullet {
+  background-color: #ff595a;
+}
+
+.lxcase .highCon {
+  overflow: auto;
+  display: none;
+}
+
+.lxcase .highCon::-webkit-scrollbar {
+  display: none;
+}
+.lxcase .highCon.active {
+  display: flex;
+}
+.lxcase .highItem {
+  margin-right: 0.5rem;
+  width: 5.5rem;
+  background: #ffffff;
+  /* box-shadow:0 0.05rem 0.05rem 0 rgba(168,168,168,0.1); */
+  border: 0.075rem solid #eeeeee;
+  border-radius: 0.25rem;
+  padding-bottom: 0.4rem;
+  flex-shrink: 0;
+}
+.lxcase .highItem:last-child {
+  margin-right: 0;
+}
+.lxcase .highTop {
+  width: 3.8rem;
+  height: 2.6rem;
+  margin: auto;
+  background: url(https://m.igo.cn/migonew/version/newImage/highScorebg.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding-top: 0.425rem;
+}
+
+.lxcase .studentName {
+  width: 100%;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.lxcase .studentGoal {
+  width: 100%;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lxcase .highName {
+  width: 100%;
+  height: 0.8rem;
+  margin-bottom: 3px;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(89, 87, 87, 1);
+}
+
+.lxcase .highConsult {
+  width: 3.8rem;
+  height: 1.5rem;
+  background-image:
+    linear-gradient(#ff595a, #ff595a), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+  box-shadow: 0.11rem 0.2rem 0.45rem 0rem rgba(246, 68, 77, 0.48);
+  border-radius: 0.74rem;
+  font-size: 0.55rem;
+  color: #ffffff;
+  margin: 0.2rem auto 0;
+  display: block;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.review ul {
+  height: 6.23rem;
+  transition-timing-function: linear !important;
+}
+.review ul > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  color: #adadad;
+}
+.review li {
+  width: 6.23rem;
+  height: 6.23rem;
+  background-color: #ffffff;
+  box-shadow: 0rem 0.1rem 0.1rem 0rem rgba(6, 0, 1, 0.06);
+  border-radius: 0.13rem;
+  border: solid 0.02rem #e5e5e5;
+  overflow: hidden;
+  margin-right: 0.43rem;
+  flex-shrink: 0;
+}
+.review li:last-child {
+  margin-right: 0;
+}
+.review li img {
+  width: 100%;
+}
+.tools ul.tools1 {
+  margin-bottom: 0.7rem;
+}
+.tools ul.tools1 li {
+  width: 2.38rem;
+  height: 2.38rem;
+  background: #f5f5f5 url(https://m.igo.cn/migonew/version/newImage/version/tool6.png) no-repeat;
+  background-size: auto 0.8rem;
+  background-position: center 1.35rem;
+  border-radius: 0.2rem;
+}
+.tools ul.tools1 li:nth-child(2) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool7.png);
+}
+.tools ul.tools1 li:nth-child(3) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool8.png);
+}
+.tools ul.tools1 li:nth-child(4) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool9.png);
+}
+.tools ul.tools1 li:nth-child(5) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool10.png);
+}
+.tools ul.tools1 li a {
+  font-size: 0.55rem;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding-top: 0.4rem;
+}
+.tools ul.tools2 li {
+  width: 2.38rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/version/tool1.png) no-repeat;
+  background-size: auto 1.3rem;
+  background-position: top center;
+  margin-bottom: 0.6rem;
+}
+.tools ul.tools2 li > a {
+  width: 100%;
+  padding-top: 1.8rem;
+  display: block;
+}
+.tools ul.tools2 li:nth-child(2) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool2.png);
+}
+.tools ul.tools2 li:nth-child(3) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool3.png);
+}
+.tools ul.tools2 li:nth-child(4) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool4.png);
+}
+.tools ul.tools2 li:nth-child(5) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/tool5.png);
+}
+.tools ul.tools2 li p {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #000000;
+  text-align: center;
+}
+.tools > a {
+  height: 1.5rem;
+  background: #f5f5f5 url(https://m.igo.cn/migonew/version/newImage/version/tools_else.png) no-repeat;
+  background-size: auto 0.55rem;
+  background-position: 3.5rem 0.55rem;
+  border-radius: 0.74rem;
+  font-size: 0.55rem;
+  color: #000000;
+  padding-left: 7.7rem;
+  margin-bottom: 0.7rem;
+}
+.tools .ul1 {
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+  justify-content: space-between;
+}
+.tools .ul1 li {
+  width: 7.08rem;
+  height: 2.58rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/ss.png) no-repeat;
+  background-size: 100%;
+  border-radius: 0.21rem;
+  /* margin-right: 0.56rem; */
+  padding: 0.55rem;
+}
+.tools .ul1 li:nth-child(2) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/bk.png);
+  margin-right: 0;
+}
+.tools .ul1 li:nth-child(3) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/zx.png);
+  margin-top: 0.4rem;
+}
+.tools .ul1 li:nth-child(4) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/yk.png);
+  width: 3.23rem;
+  height: 2.58rem;
+  margin-top: 0.4rem;
+}
+.tools .ul1 li:nth-child(5) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/bs.png);
+  width: 3.23rem;
+  height: 2.58rem;
+  margin-right: 0;
+  margin-top: 0.4rem;
+}
+.tools .ul1 li p:nth-child(1) {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #b34747;
+  font-family: "AlibabaPuHuiTiBold";
+}
+.tools .ul1 li p:nth-child(2) {
+  font-size: 0.47rem;
+  line-height: 0.47rem;
+  color: #4d4d4d;
+  margin-top: 0.33rem;
+}
+.tools .ul1 li:nth-child(2) p:nth-child(1) {
+  color: #b36947;
+}
+.tools .ul1 li:nth-child(3) p:nth-child(1) {
+  color: #b39268;
+}
+.tools .ul1 li:nth-child(4) p:nth-child(1) {
+  color: #916a3b;
+}
+.tools .ul1 li:nth-child(5) p:nth-child(1) {
+  color: #478fb3;
+}
+
+.service .ul2 li {
+  width: 3.23rem;
+  height: 2.58rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/icon1.png) no-repeat;
+  background-size: 100%;
+  border-radius: 0.21rem;
+  margin-right: 0.56rem;
+  padding: 0.4rem 0 0 0.5rem;
+}
+.service .ul2 li:nth-child(2) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/icon2.png);
+}
+.service .ul2 li:nth-child(3) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/icon3.png);
+}
+.service .ul2 li:nth-child(4) {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/icon4.png);
+  margin-right: 0;
+}
+.service .ul2 li p:nth-child(1) {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #333333;
+  font-family: "AlibabaPuHuiTiBold";
+}
+.service .ul2 li p:nth-child(2) {
+  font-size: 0.47rem;
+  line-height: 0.47rem;
+  color: #4d4d4d;
+  margin-top: 0.2rem;
+}
+.teacher ul {
+  align-items: flex-end;
+  height: 4.2rem;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.teacher ul::-webkit-scrollbar {
+  display: none;
+}
+.teacher li {
+  margin-right: 0.4rem;
+  width: 3.23rem;
+}
+.teacher li:last-child {
+  margin-right: 0;
+}
+.teacher li .img {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #ffffff;
+  border: solid 0.04rem #ebebeb;
+  overflow: hidden;
+  align-items: flex-start;
+  border-radius: 2.6rem;
+  padding-top: 0.2rem;
+  margin: 0 auto;
+}
+.teacher li.active .img {
+  width: 3.23rem;
+  height: 3.23rem;
+  border-color: #ff7875;
+}
+.teacher li img {
+  width: 120%;
+}
+.teacher li p {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.teacher li.active p {
+  font-family: "AlibabaPuHuiTiBold";
+}
+.teacher ul > a {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #ffffff;
+  border: solid 0.04rem #ebebeb;
+  border-radius: 2.2rem;
+  font-size: 0.55rem;
+  color: #2d2b2b;
+  position: relative;
+  top: -1.15rem;
+  flex-shrink: 0;
+}
+.teacher .T-info {
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0rem 0.1rem 0.1rem 0rem rgba(6, 0, 1, 0.06);
+  border-radius: 0.21rem;
+  border: solid 0.02rem #e5e5e5;
+  margin: 0.8rem 0 0;
+  padding: 0.2rem 1rem 0.2rem 0.5rem;
+}
+.teacher ul > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  color: #adadad;
+  line-height: 4.2rem;
+}
+.teacher .T-info > div {
+  line-height: 0.9rem;
+}
+.teacher .T-info p {
+  font-size: 0.55rem;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.teacher .T-info img {
+  height: 0.65rem;
+  margin-right: 0.33rem;
+  flex-shrink: 0;
+}
+.teacher .btnbox {
+  margin-bottom: 0;
+  margin-top: 0.8rem;
+}
+.teacher .btnbox > div:nth-child(2) {
+  margin-left: 0.85rem;
+}
+.teacher .list {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #f9f9f9;
+  box-shadow: 0rem 0.1rem 0.1rem 0rem rgba(6, 0, 1, 0.06);
+  border-radius: 0.21rem;
+  border: solid 0.02rem #e5e5e5;
+  padding: 0.63rem 0.7rem;
+  position: relative;
+}
+.teacher .list p {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #333333;
+  margin-bottom: 0.6rem;
+  font-family: "AlibabaPuHuiTiBold";
+}
+.teacher .list > a {
+  font-size: 0.51rem;
+  line-height: 0.51rem;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.63rem;
+  position: relative;
+}
+.teacher .list > a::before {
+  content: "";
+  width: 0.28rem;
+  height: 0.28rem;
+  background-color: #e6e6e6;
+  border-radius: 0.28rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.teacher .list .leyubtn {
+  position: absolute;
+  bottom: 0.7rem;
+  right: 0.7rem;
+}
+.formbox {
+  background: none;
+  padding: 0.83rem 0.43rem;
+}
+.formbox > div {
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0rem 0.1rem 0.1rem 0rem rgba(6, 0, 1, 0.06);
+  border-radius: 0.21rem;
+  padding-bottom: 0.85rem;
+}
+.formbox .f-top {
+  height: 2.9rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/form_bg.png) no-repeat;
+  background-size: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.formbox .f-top > p {
+  font-size: 1.28rem;
+  line-height: 1.28rem;
+  color: #ffffff;
+  margin-right: 0.75rem;
+  font-family: "AlibabaPuHuiTiBold";
+}
+.formbox .f-top > div p {
+  font-size: 0.55rem;
+  line-height: 0.75rem;
+  color: #ffffff;
+}
+.formbox .f-main {
+  padding: 0 0.53rem;
+}
+.formbox .f-main > p {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.formbox .f-main > p:nth-child(2) {
+  font-size: 0.68rem;
+  line-height: 0.68rem;
+  color: #ff595a;
+  margin-bottom: 0.85rem;
+}
+#recommended {
+  padding: 4.4rem 0.63rem 0;
+}
+#recommended .list {
+  background: #ffffff;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  min-height: calc(100vh - 8rem);
+  position: relative;
+}
+#recommended .list .loading-initial {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+#recommended .list .loading-initial img {
+  width: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+#recommended .list .loading-more {
+  border: none;
+}
+#recommended .list .loading-more img {
+  width: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+#recommended .list a {
+  color: #333333;
+}
+#recommended .list > div {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0.8rem 0;
+}
+#recommended .list .stitle {
+  font-size: 0.65rem;
+  line-height: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ????????? */
+  -webkit-line-clamp: 2;
+}
+#recommended .activity .startTime {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  margin-bottom: 0.5rem;
+  color: #b7b7b7;
+}
+#recommended .activity .poster {
+  width: 100%;
+  height: 8.3rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 0.3rem;
+  margin: 0 auto 0.4rem;
+  overflow: hidden;
+  position: relative;
+}
+#recommended .activity .poster::after {
+  content: "";
+  width: 1.2rem;
+  height: 0.9rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/version/liveIcon.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+#recommended .activity .intr {
+  font-size: 0.55rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ????????? */
+  -webkit-line-clamp: 3;
+  color: #8d8d8d;
+  line-height: 0.9rem;
+}
+#recommended .zixun .info {
+  align-items: flex-start;
+}
+#recommended .zixun .poster {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 5.1rem;
+  border-radius: 0.3rem;
+  height: 2.9rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+#recommended .zixun .poster::after {
+  content: "";
+  width: 1.2rem;
+  height: 0.9rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/version/newsIcon.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+#recommended .zixun .poster.dynamicNewsIcon::after {
+  background-image: url(https://m.igo.cn/migonew/version/newImage/version/dynamicNews.png);
+}
+#recommended .video .poster {
+  width: 100%;
+  height: 8rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+#recommended .video .poster > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.3rem;
+  position: relative;
+  filter: blur(3px);
+}
+#recommended .video .poster > div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#recommended .video .poster::after {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/version/play.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+#recommended .zixun .intr {
+  font-size: 0.55rem;
+  width: 8.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ????????? */
+  -webkit-line-clamp: 3;
+  color: #8d8d8d;
+  line-height: 0.9rem;
+}
+#recommended .list .from {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  margin-top: 0.4rem;
+  align-items: f;
+}
+#recommended .list .from em {
+  width: 0.7rem;
+  height: 0.7rem;
+  background: url(/migonew/version/newImage/version/smallLogo.jpg) no-repeat;
+  background-size: 100%;
+  flex-shrink: 0;
+  margin-right: 0.3rem;
+  border-radius: 0.7rem;
+}
+#recommended .list .from p:nth-child(2) {
+  color: #8d8d8d;
+  font-size: 0.5rem;
+}
+.pop_evaluate_form {
+  flex-wrap: wrap;
+}
+.pop_evaluate_form .form_item {
+  width: 100%;
+  height: 1.53rem;
+  background-color: #ffffff;
+  border-radius: 0.13rem;
+  border: solid 0.02rem #e5e5e5;
+  margin-bottom: 0.3rem;
+  /* overflow: hidden; */
+  position: relative;
+}
+.pop_evaluate_form .form_item.mar {
+  margin-bottom: 0;
+}
+.pop_evaluate_form .form_item input,
+.pop_evaluate_form .form_item select {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 0.55rem;
+  display: block;
+  padding-left: 1.4rem;
+  color: #999999;
+}
+.pop_evaluate_form .form_select::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/ev_arrow.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 0.7rem;
+  transform: translateY(-50%);
+}
+.pop_evaluate_form .form_item input::placeholder {
+  color: #999999;
+}
+.pop_evaluate_form .form_item.m {
+  width: 6.85rem;
+}
+
+.pop_evaluate_form .ev_icon1 {
+  background: url(https://m.igo.cn/migonew/version/newImage/lan.png) no-repeat 0.14rem center;
+  background-size: 0.85rem auto;
+}
+
+.pop_evaluate_form .ev_icon2 {
+  background: url(https://m.igo.cn/migonew/version/newImage/city.png) no-repeat 0.1rem center;
+  background-size: 0.7rem 0.7rem;
+}
+
+.pop_evaluate_form .ev_icon3 {
+  background: url(https://m.igo.cn/migonew/version/newImage/location.png) no-repeat 0.2rem center;
+  background-size: 0.65rem auto;
+}
+
+.pop_evaluate_form .ev_icon4 {
+  background: url(https://m.igo.cn/migonew/version/newImage/education.png) no-repeat 0.2rem center;
+  background-size: 0.65rem auto;
+}
+
+.pop_evaluate_form .ev_icon5 {
+  background: url(https://m.igo.cn/migonew/version/newImage/name.png) no-repeat 0.2rem center;
+  background-size: 0.75rem auto;
+}
+
+.pop_evaluate_form .ev_icon6 {
+  background: url(https://m.igo.cn/migonew/version/newImage/phone.png) no-repeat 0.2rem center;
+  background-size: 0.75rem auto;
+}
+.formbox .pop_evaluate_form .leyubtn {
+  width: 7rem;
+  margin: 0.85rem auto 0;
+}
+.news ul {
+  min-height: 6.8rem;
+}
+.news ul > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  line-height: 6.8rem;
+  color: #adadad;
+}
+.news li p:nth-child(1) {
+  font-size: 0.555555rem;
+  line-height: 0.85rem;
+  padding-left: 0.7rem;
+  color: #333333;
+}
+.news li:nth-child(1) {
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0.3rem;
+}
+.news li:nth-child(1) p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* ???�????????�??????€?????? */
+  -webkit-line-clamp: 2;
+  position: relative;
+}
+.news li:nth-child(1) p:nth-child(1):before {
+  content: "";
+  width: 0.38rem;
+  height: 0.48rem;
+  background: url(https://m.igo.cn/migonew/version/newImage/hot.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+}
+.news li:nth-child(1) p:nth-child(2) {
+  font-size: 0.55rem;
+  line-height: 0.55rem;
+  color: #999999;
+  margin-top: 0.5rem;
+  padding-left: 0.7rem;
+}
+.news li:nth-child(1) .poster {
+  width: 4.3rem;
+  height: 2.63rem;
+  border-radius: 0.13rem;
+  flex-shrink: 0;
+  margin-left: 0.53rem;
+  overflow: hidden;
+}
+.news li:nth-child(1) .poster img {
+  width: 100%;
+}
+.news li a > p:nth-child(1) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1rem;
+  position: relative;
+}
+.news li a > p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #ebebeb;
+  border-radius: 0.3rem;
+}
+.videos ul {
+  overflow: auto;
+  /* height: 7rem; */
+}
+.videos ul::-webkit-scrollbar {
+  display: none;
+}
+.videos ul > p {
+  font-size: 0.55rem;
+  text-align: center;
+  width: 100%;
+  color: #adadad;
+}
+.videos li {
+  width: 5.15rem;
+  margin-right: 0.4rem;
+  flex-shrink: 0;
+}
+.videos li:last-child {
+  margin-right: 0;
+}
+.videos li .poster {
+  width: 100%;
+  height: 7rem;
+  background-color: #000000;
+  position: relative;
+  /* margin-bottom: 0.4rem; */
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+}
+.videos li img {
+  width: 100%;
+}
+.videos li .poster .play {
+  width: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.videos li p {
+  width: 100%;
+  color: #333333;
+  font-size: 0.5rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 1.5rem;
+}
+
+/* ???????? */
+.youlike {
+  width: 16rem;
+  background: rgba(255, 255, 255, 1);
+  margin-bottom: 0.23rem;
+  padding: 0.25rem 0;
+}
+
+.youlike .youlikeTitle {
+  padding: 0.35rem 0.55rem;
+  flex-shrink: 0;
+  margin-left: 0.55rem;
+  background: rgba(141, 141, 141, 1);
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  float: left;
+}
+
+.youlike .youlikeCon {
+  float: left;
+  width: 12.75rem;
+  height: 2.5rem;
+  margin-top: -0.25rem;
+}
+
+.youlike .youlikeCon > a {
+  width: 3.5rem;
+  float: left;
+  display: block;
+  height: 0.6rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(57, 57, 57, 1);
+  line-height: 0.6rem;
+  margin-top: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.copyright {
+  padding: 0.5rem 0 0.5rem;
+  text-align: center;
+  font-size: 0.55rem;
+  color: #bdbdbd;
+  line-height: 0.8rem;
+  background: none;
+}
+
+.copyright a {
+  color: #bdbdbd;
+}
+
+.pop_window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pop_window .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pop_window.active {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.pop_form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 14rem;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pop_form .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #333;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.pop_form .form_title {
+  padding-bottom: 5px;
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #333;
+  border-bottom: 1px dashed #333;
+}
+
+.pop_form .txt {
+  margin-top: 5px;
+  font-size: 0.55rem;
+  color: #848383;
+}
+
+.pop_form .form {
+  margin: 0.75rem auto 0;
+  width: 10.25rem;
+  text-align: left;
+}
+
+.pop_form .form .form_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.pop_form .form .form_item .label {
+  display: block;
+  width: 2.5rem;
+  padding: 0.35rem 0 0.35rem 0.8rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: #323232;
+}
+
+.pop_form .form .form_item .name_label {
+  background: url("https://m.igo.cn/images/name_icon.jpg") no-repeat left center;
+  background-size: 0.55rem 0.55rem;
+}
+
+.pop_form .form .form_item .tel_label {
+  background: url("https://m.igo.cn/images/tel_icon.jpg") no-repeat left center;
+  background-size: 0.55rem 0.55rem;
+}
+
+.pop_form .form .form_item .pos_label {
+  background: url("https://m.igo.cn/images/pos_icon.jpg") no-repeat left center;
+  background-size: 0.4rem 0.55rem;
+}
+
+.pop_form .form .form_item .user_val,
+.pop_form .form .form_item .value_box {
+  width: 7.5rem;
+  padding-left: 5px;
+  background-color: #f4f4f4;
+  border: none;
+  font-size: 0.6rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pop_form .form .form_item .user_yzm {
+  margin-left: 2.5rem;
+  padding: 0.35rem 0 0.35rem 5px;
+  width: 3.75rem;
+  font-size: 0.6rem;
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.pop_form .form .form_item .get_yzm {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-align: center;
+  text-decoration: underline;
+  color: #323232;
+  position: relative;
+}
+
+.pop_form .form .form_item .get_yzm:before {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  content: "";
+}
+
+.pop_form .form .form_item .value_box {
+  -webkit-appearance: none;
+  background: #f4f4f4 url("https://m.igo.cn/images/arrow.jpg") no-repeat 6.5rem
+    center;
+  background-size: 0.5rem 0.3rem;
+}
+
+.bottom_form .form .form_item #fcity,
+.pop_form .form .form_item #fcity {
+  color: #8d8d8d;
+}
+
+.bottom_form .form .submit_btn,
+.pop_form .form .submit_btn {
+  display: block;
+  margin: 1rem 0 0.75rem;
+  padding: 0.35rem 0;
+  color: #fff;
+  font-size: 0.6rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f67947),
+    to(#f6494c)
+  );
+  background: linear-gradient(90deg, #f67947, #f6494c);
+  text-align: center;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 5px 10px rgba(246, 68, 77, 0.48);
+  box-shadow: 0 5px 10px rgba(246, 68, 77, 0.48);
+  letter-spacing: 1px;
+}
+
+.bottom_form .form .count,
+.pop_form .form .count {
+  text-align: center;
+  color: #848383;
+  font-size: 0.55rem;
+}
+
+.select-options {
+  position: absolute;
+  top: 1.53rem;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #ffffff;
+  padding: 0.3rem;
+  box-shadow: 0px 0.1rem 0.4rem 0px #ababab4d;
+  border-radius: 0.13rem;
+  display: none;
+}
+.select-option,.select-option-other{
+  display: flex;
+  align-items: center;
+  padding: 0.32rem 0.48rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.16rem;
+  transition: all 0.2s;
+  font-size: 0.55rem;
+  margin-bottom: 0.2rem;
+  color: #a1a1a1;
+  height: 1.4rem;
+}
+.select-option input {
+  display: none !important;
+}
+.select-option-other .other-input {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  padding-left: 0 !important;
+}
+  .select-option .check-box {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.08rem;
+    margin-right: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .select-option.selected .check-box {
+    background: #ff595b;
+    border-color: #ff595b;
+  }
+
+  .select-option.selected .check-box::after {
+    content: "\2713";
+    color: #fff;
+    font-size: 0.28rem;
+  }
+.select-option.selected{
+  border: 1px solid #ff5e5f;
+  background: #fff5f5;
+  color: #ff5e5f;
+}
+.confirm{
+    font-size: .55rem;
+    width: 4rem;
+    height: 1.4rem;
+    background: #ff7a7b;
+    border-radius: 1rem;
+    margin: .5rem auto 0;
+    text-align: center;
+    line-height: 1.4rem;
+    color: #ffffff;
 }
