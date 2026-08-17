@@ -3,50 +3,50 @@ const countries = [
   {
     id: `us`,
     code: `US`,
-    name: `美国`,
+    name: `����`,
     nameEn: `United States`,
-    flag: `🇺🇸`,
+    flag: `??`,
 
     number: "01",
     program: {
       highlights: [
-        `全球顶尖科研资源`,
-        `整体审查 Holistic Review`,
-        `STEM OPT 3年工作签证`,
-        `博士申请套磁选校一体化`,
+        `ȫ�򶥼������Դ`,
+        `������� Holistic Review`,
+        `STEM OPT 3�깤��ǩ֤`,
+        `��ʿ�����״�ѡУһ�廯`,
       ],
-      tagline: `常春藤联盟 · 综合大学 · 整体审查录取 · 博士科研导向`,
-      level: '本科/硕士/博士',
-      duration: '规划期 ≤2 年',
-      title: '美国本/硕/博智领名校计划',
+      tagline: `���������� �� �ۺϴ�ѧ �� �������¼ȡ �� ��ʿ���е���`,
+      level: '����/˶ʿ/��ʿ',
+      duration: '�滮�� ��2 ��',
+      title: '������/˶/��������У�ƻ�',
       subtitle: "US Elite Admission Program",
-      price: "¥48,000 – ¥198,000",
+      price: "?48,000 �C ?198,000",
       modules: [
-        '集团策略规划专家 1V1 深度访谈 & 申请力提升脑暴（线上2小时）',
-        '《留学申请力提升行动方案》产出（含SWOT分析、GPA管理、标化规划）',
-        '学期规划脑暴：每学期前设定目标 & 学期后评估成果（附《月度规划报告》）',
-        '北森职业性格测评（5份报告）+ 名企专家导师1V1职业规划课',
-        'CBL案例式兴趣探索营 + 测评解析 & 兴趣挖掘课',
-        '《专业与未来职业规划报告》+ 留学&就业一体化规划方案',
-        '在线互动小班课（1V10线上1小时×3次）+ 前辈留学分享',
-        '学术科研项目（哥伦比亚/约翰霍普金斯/普林斯顿等终身教授指导）',
-        '名企实习/PTA项目匹配（互联网/咨询/金融/快消方向）',
-        '选校头脑风暴 + 专属《选校方案》报告（保底-匹配-冲刺梯度）',
-        '美国TOP30外籍导师文书头脑风暴（线上2小时）+ 主文书润色',
-        '申请递交全流程跟进 + 面试辅导 + 签证指导 + 选课赋能'
+        '���Ų��Թ滮ר�� 1V1 ��ȷ�̸ & �����������Ա�������2Сʱ��',
+        '����ѧ�����������ж���������������SWOT������GPA�������껯�滮��',
+        'ѧ�ڹ滮�Ա���ÿѧ��ǰ�趨Ŀ�� & ѧ�ں������ɹ��������¶ȹ滮���桷��',
+        '��ɭְҵ�Ը������5�ݱ��棩+ ����ר�ҵ�ʦ1V1ְҵ�滮��',
+        'CBL����ʽ��Ȥ̽��Ӫ + �������� & ��Ȥ�ھ��',
+        '��רҵ��δ��ְҵ�滮���桷+ ��ѧ&��ҵһ�廯�滮����',
+        '���߻���С��Σ�1V10����1Сʱ��3�Σ�+ ǰ����ѧ����',
+        'ѧ��������Ŀ�����ױ���/Լ�����ս�˹/����˹�ٵ���������ָ����',
+        '����ʵϰ/PTA��Ŀƥ�䣨������/��ѯ/����/��������',
+        'ѡУͷ�Է籩 + ר����ѡУ���������棨����-ƥ��-����ݶȣ�',
+        '����TOP30�⼮��ʦ����ͷ�Է籩������2Сʱ��+ ��������ɫ',
+        '����ݽ�ȫ���̸��� + ���Ը��� + ǩָ֤�� + ѡ�θ���'
       ],
       stats: [
         {
-          label: `院校导师`,
+          label: `ԺУ��ʦ`,
           value: `TOP30`,
         },
         {
-          label: `名企专家`,
-          value: `500强`,
+          label: `����ר��`,
+          value: `500ǿ`,
         },
         {
-          label: `服务层次`,
-          value: `本硕博`,
+          label: `������`,
+          value: `��˶��`,
         },
       ],
     },
@@ -54,46 +54,46 @@ const countries = [
   {
     id: `de`,
     code: `DE`,
-    name: `德国`,
+    name: `�¹�`,
     nameEn: `Germany`,
-    flag: `🇩🇪`,
+    flag: `??`,
 
 
     number: "02",
     program: {
       highlights: [
-        `慕尼黑工大 · 亚琛工大 · 卡尔斯鲁厄理工`,
-        `18个月找工签证`,
-        `IB/A-Level/AP/OSSD直接申请`,
-        `APS审核1V1辅导10小时`,
+        `Ľ��ڹ��� �� ��衹��� �� ����˹³������`,
+        `18�����ҹ�ǩ֤`,
+        `IB/A-Level/AP/OSSDֱ������`,
+        `APS���1V1����10Сʱ`,
       ],
-      tagline: `TU9理工联盟 · 公立免学费 · APS审核 · 国际高中生直通`,
-      level: '本科/硕士',
-      duration: '规划期 1-2 年',
-      title: '德国本科/硕士智领名校计划',
+      tagline: `TU9�������� �� ������ѧ�� �� APS��� �� ���ʸ�����ֱͨ`,
+      level: '����/˶ʿ',
+      duration: '�滮�� 1-2 ��',
+      title: '�¹�����/˶ʿ������У�ƻ�',
       subtitle: "Germany Elite Program",
-      price: "¥28,000 – ¥88,000",
+      price: "?28,000 �C ?88,000",
       modules: [
-        'APS审核1V1辅导10小时 + 材料清单与面试模拟',
-        '德语/英语授课方案双轨规划与语言考试排期',
-        'TU9联盟院校专业匹配与课程描述优化',
-        '动机信 & 课程匹配度分析报告定制',
-        '申请门户（Uni-Assist/直申）全流程跟进',
-        '签证材料准备、保险与住宿指导',
-        '赴德前跨文化适应课程与学业衔接课',
-        '在德求职/找工签证与实习资源对接'
+        'APS���1V1����10Сʱ + �����嵥������ģ��',
+        '����/Ӣ���ڿη���˫��滮�����Կ�������',
+        'TU9����ԺУרҵƥ����γ������Ż�',
+        '������ & �γ�ƥ��ȷ������涨��',
+        '�����Ż���Uni-Assist/ֱ�꣩ȫ���̸���',
+        'ǩ֤����׼����������ס��ָ��',
+        '����ǰ���Ļ���Ӧ�γ���ѧҵ�νӿ�',
+        '�ڵ���ְ/�ҹ�ǩ֤��ʵϰ��Դ�Խ�'
       ],
       stats: [
         {
-          label: `合作院校`,
+          label: `����ԺУ`,
           value: `80+`,
         },
         {
-          label: `公立免学费`,
-          value: `✓`,
+          label: `������ѧ��`,
+          value: `?`,
         },
         {
-          label: `在德留学生`,
+          label: `�ڵ���ѧ��`,
           value: `39K+`,
         },
       ],
@@ -102,47 +102,47 @@ const countries = [
   {
     id: `uk`,
     code: `GB`,
-    name: `英国`,
+    name: `Ӣ��`,
     nameEn: `United Kingdom`,
-    flag: `🇬🇧`,
+    flag: `??`,
 
     number: "03",
     program: {
       highlights: [
-        `牛津 · 剑桥 · 帝国理工 · UCL · LSE`,
-        `PSW 毕业工签 2 年`,
-        `UCAS 集中申请`,
-        `博士申请RP质量为核心`,
+        `ţ�� �� ���� �� �۹����� �� UCL �� LSE`,
+        `PSW ��ҵ��ǩ 2 ��`,
+        `UCAS ��������`,
+        `��ʿ����RP����Ϊ����`,
       ],
 
-      tagline: `G5 精英 · 罗素集团 · 一年制硕士 · 导师主导制博士`,
-      level: "本科/硕士/博士",
-      duration: '规划期 6-18 个月',
-      title: '英国本/硕/博智领名校计划',
+      tagline: `G5 ��Ӣ �� ���ؼ��� �� һ����˶ʿ �� ��ʦ�����Ʋ�ʿ`,
+      level: "����/˶ʿ/��ʿ",
+      duration: '�滮�� 6-18 ����',
+      title: 'Ӣ����/˶/��������У�ƻ�',
       subtitle: "UK G5 Admission Program",
-      price: "¥38,000 – ¥158,000",
+      price: "?38,000 �C ?158,000",
       modules: [
-        '英联邦申请逻辑解析 + 选校梯度定位',
-        'PS/CV/推荐信三轮打磨 + 外籍导师润色',
-        'G5笔试面试（TMUA/STEP/面试）专项辅导',
-        '博士RP研究计划精修 + 套磁策略与导师匹配',
-        'UCAS/院校portal递交与进度跟进',
-        '语言班、CAS、签证一站式指导',
-        '行前住宿、选课与英国学术规范课程',
-        '留英就业与PSW转工签路径规划'
+        'Ӣ���������߼����� + ѡУ�ݶȶ�λ',
+        'PS/CV/�Ƽ������ִ�ĥ + �⼮��ʦ��ɫ',
+        'G5�������ԣ�TMUA/STEP/���ԣ�ר���',
+        '��ʿRP�о��ƻ����� + �״Ų����뵼ʦƥ��',
+        'UCAS/ԺУportal�ݽ�����ȸ���',
+        '���԰ࡢCAS��ǩ֤һվʽָ��',
+        '��ǰס�ޡ�ѡ����Ӣ��ѧ���淶�γ�',
+        '��Ӣ��ҵ��PSWת��ǩ·���滮'
       ],
       stats: [
         {
           label: `QS TOP 100`,
-          value: `17所`,
+          value: `17��`,
         },
         {
-          label: `一年制硕士`,
-          value: `1年`,
+          label: `һ����˶ʿ`,
+          value: `1��`,
         },
         {
-          label: `PSW 工签`,
-          value: `2年`,
+          label: `PSW ��ǩ`,
+          value: `2��`,
         },
       ],
     },
@@ -150,47 +150,47 @@ const countries = [
   {
     id: `ca`,
     code: `CA`,
-    name: `加拿大`,
+    name: `���ô�`,
     nameEn: `Canada`,
-    flag: `🇨🇦`,
+    flag: `??`,
 
 
     number: "04",
     program: {
       highlights: [
-        `麦吉尔 · 多伦多 · UBC`,
-        `Co-op 带薪实习项目`,
-        `毕业工签最长 3 年`,
-        `博士导师主导制申请`,
+        `�󼪶� �� ���׶� �� UBC`,
+        `Co-op ��нʵϰ��Ŀ`,
+        `��ҵ��ǩ� 3 ��`,
+        `��ʿ��ʦ����������`,
       ],
-      tagline: `公立教育 · Co-op 带薪实习 · 移民友好 · 研究型博士`,
-      level: "本科/硕士/博士",
-      duration: '规划期 1-2 年',
-      title: '加拿大本/硕/博智领名校计划',
+      tagline: `�������� �� Co-op ��нʵϰ �� �����Ѻ� �� �о��Ͳ�ʿ`,
+      level: "����/˶ʿ/��ʿ",
+      duration: '�滮�� 1-2 ��',
+      title: '���ô�/˶/��������У�ƻ�',
       subtitle: "Canada Immigration Pathway",
-      price: "¥32,000 – ¥128,000",
+      price: "?32,000 �C ?128,000",
       modules: [
-        '加拿大各省院校与移民政策匹配分析',
-        'OUAC/院校直申系统双通道规划',
-        'Co-op项目筛选与求职简历精修',
-        '文书素材挖掘 + 加拿大招生官视角润色',
-        '研究型硕士/博士套磁与导师沟通辅导',
-        '签证学习计划（Study Plan）定制',
-        '行前安家、选课与学业适应指导',
-        '毕业工签PGWP与省提名移民路径咨询'
+        '���ô��ʡԺУ����������ƥ�����',
+        'OUAC/ԺУֱ��ϵͳ˫ͨ���滮',
+        'Co-op��Ŀɸѡ����ְ��������',
+        '�����ز��ھ� + ���ô��������ӽ���ɫ',
+        '�о���˶ʿ/��ʿ�״��뵼ʦ��ͨ����',
+        'ǩ֤ѧϰ�ƻ���Study Plan������',
+        '��ǰ���ҡ�ѡ����ѧҵ��Ӧָ��',
+        '��ҵ��ǩPGWP��ʡ��������·����ѯ'
       ],
       stats: [
         {
-          label: `合作省份`,
+          label: `����ʡ��`,
           value: `10+`,
         },
         {
-          label: `Co-op 项目`,
+          label: `Co-op ��Ŀ`,
           value: `80+`,
         },
         {
-          label: `毕业工签`,
-          value: `3年`,
+          label: `��ҵ��ǩ`,
+          value: `3��`,
         },
       ],
     },
@@ -199,46 +199,46 @@ const countries = [
   {
     id: `sg`,
     code: `SG`,
-    name: `新加坡`,
+    name: `�¼���`,
     nameEn: `Singapore`,
-    flag: `🇸🇬`,
+    flag: `??`,
     number: "05",
     program: {
       highlights: [
-        `NUS QS · NTU QS · SMU`,
-        `硬性筛选 + 综合评估`,
-        `一年制授课型硕士`,
-        `博士亚洲科研前沿导向`,
+        `NUS QS �� NTU QS �� SMU`,
+        `Ӳ��ɸѡ + �ۺ�����`,
+        `һ�����ڿ���˶ʿ`,
+        `��ʿ���޿���ǰ�ص���`,
       ],
-      tagline: `亚洲名校 · 双语环境 · 就业衔接 · 科研前沿`,
-      level: "硕士/博士",
-      duration: '规划期 6-12 个月',
-      title: '新加坡硕士/博士智领名校计划',
+      tagline: `������У �� ˫�ﻷ�� �� ��ҵ�ν� �� ����ǰ��`,
+      level: "˶ʿ/��ʿ",
+      duration: '�滮�� 6-12 ����',
+      title: '�¼���˶ʿ/��ʿ������У�ƻ�',
       subtitle: "Singapore Top Uni Program",
-      price: "¥22,000 – ¥68,000",
+      price: "?22,000 �C ?68,000",
       modules: [
-        '新加坡公立大学录取画像与硬门槛评估',
-        'A-Level/IB/AP/OSSD课程体系适配方案',
-        '面试（Video/真人）专项模拟与表达训练',
-        '文书与推荐信凸显亚洲领导力与全球视野',
-        '科研/实习/竞赛背景提升资源匹配',
-        '硕士滚动申请时间线与奖学金策略',
-        '行前指导、住宿申请与跨文化适应',
-        '新加坡本地就业与EP路径初步规划'
+        '�¼��¹�����ѧ¼ȡ������Ӳ�ż�����',
+        'A-Level/IB/AP/OSSD�γ���ϵ���䷽��',
+        '���ԣ�Video/���ˣ�ר��ģ�������ѵ��',
+        '�������Ƽ���͹�������쵼����ȫ����Ұ',
+        '����/ʵϰ/��������������Դƥ��',
+        '˶ʿ��������ʱ�����뽱ѧ�����',
+        '��ǰָ����ס����������Ļ���Ӧ',
+        '�¼��±��ؾ�ҵ��EP·�������滮'
       ],
 
       stats: [
         {
-          label: `公立大学`,
-          value: `6所`,
+          label: `������ѧ`,
+          value: `6��`,
         },
         {
-          label: `一年制硕士`,
-          value: `1年`,
+          label: `һ����˶ʿ`,
+          value: `1��`,
         },
         {
-          label: `服务层次`,
-          value: `硕博`,
+          label: `������`,
+          value: `˶��`,
         },
       ],
     },
@@ -247,45 +247,45 @@ const countries = [
   {
     id: `hk`,
     code: `HK`,
-    name: `中国香港`,
+    name: `�й����`,
     nameEn: `Hong Kong`,
-    flag: `🇭🇰`,
+    flag: `??`,
     number: "06",
     program: {
       highlights: [
-        `港大 · 港中文 · 港科技 · 港城 · 港理`,
-        `一年制授课硕士`,
-        `IANG 无条件工签 2 年`,
-        `博士UGC资助研究轨道`,
+        `�۴� �� ������ �� �ۿƼ� �� �۳� �� ����`,
+        `һ�����ڿ�˶ʿ`,
+        `IANG ��������ǩ 2 ��`,
+        `��ʿUGC�����о����`,
       ],
-      tagline: `港八大 · 中西融合 · IANG 签证 · UGC资助博士`,
-      level: "硕士/博士",
-      duration: '规划期 6-12 个月',
-      title: '中国香港硕士/博士智领名校计划',
+      tagline: `�۰˴� �� �����ں� �� IANG ǩ֤ �� UGC������ʿ`,
+      level: "˶ʿ/��ʿ",
+      duration: '�滮�� 6-12 ����',
+      title: '�й����˶ʿ/��ʿ������У�ƻ�',
       subtitle: "Hong Kong Elite Program",
-      price: "¥18,000 – ¥58,000",
+      price: "?18,000 �C ?58,000",
       modules: [
-        '港校招生偏好与滚动录取节奏分析',
-        '商科/理工/人文社科分方向选校策略',
-        '个人陈述与推荐信突出区域竞争力',
-        '面试（群面/个人面）全真模拟',
-        '博士RP与导师研究方向匹配辅导',
-        '网申系统填写与材料认证跟进',
-        '学生签证、ID办理与在港住宿指导',
-        '留港就业IANG、大湾区发展双轨规划'
+        '��У����ƫ�������¼ȡ�������',
+        '�̿�/����/������Ʒַ���ѡУ����',
+        '���˳������Ƽ���ͻ����������',
+        '���ԣ�Ⱥ��/�����棩ȫ��ģ��',
+        '��ʿRP�뵼ʦ�о�����ƥ�丨��',
+        '����ϵͳ��д�������֤����',
+        'ѧ��ǩ֤��ID�������ڸ�ס��ָ��',
+        '���۾�ҵIANG����������չ˫��滮'
       ],
       stats: [
         {
-          label: `八大院校`,
-          value: `8所`,
+          label: `�˴�ԺУ`,
+          value: `8��`,
         },
         {
           label: `QS TOP 100`,
-          value: `5所`,
+          value: `5��`,
         },
         {
-          label: `IANG 工签`,
-          value: `2年`,
+          label: `IANG ��ǩ`,
+          value: `2��`,
         },
       ],
     },
@@ -294,73 +294,73 @@ const countries = [
 ];
 
 const countryList = [
-  { code: "US", name: "美国", codeLower: "us" },
-  { code: "GB", name: "英国", codeLower: "gb" },
-  { code: "CA", name: "加拿大", codeLower: "ca" },
-  { code: "DE", name: "德国", codeLower: "de" },
-  { code: "SG", name: "新加坡", codeLower: "sg" },
-  { code: "HK", name: "中国香港", codeLower: "hk" },
+  { code: "US", name: "����", codeLower: "us" },
+  { code: "GB", name: "Ӣ��", codeLower: "gb" },
+  { code: "CA", name: "���ô�", codeLower: "ca" },
+  { code: "DE", name: "�¹�", codeLower: "de" },
+  { code: "SG", name: "�¼���", codeLower: "sg" },
+  { code: "HK", name: "�й����", codeLower: "hk" },
 ];
 
 const competenceData = [
   {
-    title: "学术硬实力",
+    title: "ѧ��Ӳʵ��",
     en: "Academic Readiness",
     icon: "grad",
     items: [
-      "GPA · IB · A-Level · AP · OSSD",
-      "标化 IELTS / TOEFL / GRE / GMAT",
-      "学科成绩与专业匹配度",
+      "GPA �� IB �� A-Level �� AP �� OSSD",
+      "�껯 IELTS / TOEFL / GRE / GMAT",
+      "ѧ�Ƴɼ���רҵƥ���",
     ],
   },
   {
-    title: "课外与领导力",
+    title: "�������쵼��",
     en: "Leadership & Impact",
     icon: "users",
     items: [
-      "学生会 · 社团 · 体育艺术",
-      "持续性 · 影响力 · 团队协作",
-      "社区服务与社会实践履历",
+      "ѧ���� �� ���� �� ��������",
+      "������ �� Ӱ���� �� �Ŷ�Э��",
+      "�������������ʵ������",
     ],
   },
   {
-    title: "学术科研与竞赛",
+    title: "ѧ�������뾺��",
     en: "Research & Competition",
     icon: "award",
     items: [
-      "名校教授 1V1 科研课题（100+课题）",
-      "优秀奖 · AMC · CTB全球创新大赛",
-      "论文发表 · 学术会议 · 竞赛获奖",
+      "��У���� 1V1 ���п��⣨100+���⣩",
+      "���㽱 �� AMC �� CTBȫ���´���",
+      "���ķ��� �� ѧ������ �� ������",
     ],
   },
   {
-    title: "实习与实践",
+    title: "ʵϰ��ʵ��",
     en: "Internship & Practice",
     icon: "briefcase",
     items: [
-      "500强名企实训（投行/咨询/科技等）",
-      "创新创业社会实践项目",
-      "PTA项目体现职业胜任力",
+      "500ǿ����ʵѵ��Ͷ��/��ѯ/�Ƽ��ȣ�",
+      "���´�ҵ���ʵ����Ŀ",
+      "PTA��Ŀ����ְҵʤ����",
     ],
   },
   {
-    title: "文书与个人品牌",
+    title: "���������Ʒ��",
     en: "Essay & Personality",
     icon: "filetext",
     items: [
-      "中外思维融合 · 外籍导师文书润色",
-      "PS · CV · 推荐信定制打造",
-      "创意文书 · 视频面试准备",
+      "����˼ά�ں� �� �⼮��ʦ������ɫ",
+      "PS �� CV �� �Ƽ��Ŷ��ƴ���",
+      "�������� �� ��Ƶ����׼��",
     ],
   },
   {
-    title: "匹配度与潜力",
+    title: "ƥ�����Ǳ��",
     en: "Fit & Potential",
     icon: "target",
     items: [
-      "院校文化匹配与专业招生偏好分析",
-      "未来职业目标与资源对接",
-      "北美测评科学测评专业倾向",
+      "ԺУ�Ļ�ƥ����רҵ����ƫ�÷���",
+      "δ��ְҵĿ������Դ�Խ�",
+      "����������ѧ����רҵ����",
     ],
   },
 ];
@@ -368,35 +368,35 @@ const competenceData = [
 const edgeData = [
   {
     icon: "lightbulb",
-    title: 'SMARTER 智能系统',
-    desc: '新通专有SMARTER智能系统提供全真模考语言评估，全球案例中心基于50万+真实录取案例，AI精准匹配院校组合。'
+    title: 'SMARTER ����ϵͳ',
+    desc: '��ͨר��SMARTER����ϵͳ�ṩȫ��ģ������������ȫ�������Ļ���50��+��ʵ¼ȡ������AI��׼ƥ��ԺУ��ϡ�'
   },
   {
     icon: "network",
-    title: '10年+ 集团策略专家',
-    desc: '深谙美英港新德加录取偏好，拥有留学行业内超10年全球名校申请经验。'
+    title: '10��+ ���Ų���ר��',
+    desc: '������Ӣ���µ¼�¼ȡƫ�ã�ӵ����ѧ��ҵ�ڳ�10��ȫ����У���뾭�顣'
   },
   {
     icon: "award2",
-    title: '百+名校教授科研资源',
-    desc: '哥伦比亚/约翰霍普金斯/普林斯顿/NUS/NTU等终身教授直接指导，100+课题可选。'
+    title: '��+��У���ڿ�����Դ',
+    desc: '���ױ���/Լ�����ս�˹/����˹��/NUS/NTU����������ֱ��ָ����100+�����ѡ��'
   },
   {
     icon: "briefcase2",
-    title: '500强名企实训资源',
-    desc: '麦肯锡·德勤·罗兰贝格·腾讯·阿里·耐克战略资源对接，为申请与求职双铺路。'
+    title: '500ǿ����ʵѵ��Դ',
+    desc: '����������ڡ�����������Ѷ������Ϳ�ս����Դ�Խӣ�Ϊ��������ְ˫��·��'
   }
 ];
 
 const timelineData = [
-  { step: '01', time: '1-2 周', title: '留学咨询', desc: '资深顾问1V1咨询 · 个性化留学方案推荐 · SMARTER智能系统免费模考语言评估' },
-  { step: '02', time: '1 个月', title: '专业/职业方向定位', desc: '北森职业性格测评 · 名企专家导师1V1职业规划课 · CBL案例式兴趣探索营' },
-  { step: '03', time: '持续至申请季前', title: '申请策略规划', desc: '集团专家深度访谈 & 申请力提升脑暴 · 出具《留学申请力提升行动方案》' },
-  { step: '04', time: '6-18 个月', title: '竞争力提升', desc: '学术科研 · 名企实习/PTA · 学术竞赛 · 企业实训 · 社会实践项目落地' },
-  { step: '05', time: '2-3 个月', title: '选校定校', desc: '“保底-匹配-冲刺”梯度选校方案 · 多轮次动态跟踪 · 套磁名单筛选' },
-  { step: '06', time: '2-3 个月', title: '文书赋能', desc: '素材收集 & 亮点挖掘 · 中外思维融合文书润色 · 外籍导师定稿' },
-  { step: '07', time: '1-2 个月', title: '申请递交与结果跟进', desc: '网申信息填写 · 成绩送分 · 邮件回复 · 面试辅导与模拟 · 签证材料准备' },
-  { step: '08', time: '持续护航', title: '行前留后护航', desc: '行前培训 · 选课指导 · 在读就业咨询 · 毕业前OPT/工签咨询 · 归国学历认证' }
+  { step: '01', time: '1-2 ��', title: '��ѧ��ѯ', desc: '�������1V1��ѯ �� ���Ի���ѧ�����Ƽ� �� SMARTER����ϵͳ���ģ����������' },
+  { step: '02', time: '1 ����', title: 'רҵ/ְҵ����λ', desc: '��ɭְҵ�Ը���� �� ����ר�ҵ�ʦ1V1ְҵ�滮�� �� CBL����ʽ��Ȥ̽��Ӫ' },
+  { step: '03', time: '���������뼾ǰ', title: '������Թ滮', desc: '����ר����ȷ�̸ & �����������Ա� �� ���ߡ���ѧ�����������ж�������' },
+  { step: '04', time: '6-18 ����', title: '����������', desc: 'ѧ������ �� ����ʵϰ/PTA �� ѧ������ �� ��ҵʵѵ �� ���ʵ����Ŀ���' },
+  { step: '05', time: '2-3 ����', title: 'ѡУ��У', desc: '������-ƥ��-��̡��ݶ�ѡУ���� �� ���ִζ�̬���� �� �״�����ɸѡ' },
+  { step: '06', time: '2-3 ����', title: '���鸳��', desc: '�ز��ռ� & �����ھ� �� ����˼ά�ں�������ɫ �� �⼮��ʦ����' },
+  { step: '07', time: '1-2 ����', title: '����ݽ���������', desc: '������Ϣ��д �� �ɼ��ͷ� �� �ʼ��ظ� �� ���Ը�����ģ�� �� ǩ֤����׼��' },
+  { step: '08', time: '��������', title: '��ǰ���󻤺�', desc: '��ǰ��ѵ �� ѡ��ָ�� �� �ڶ���ҵ��ѯ �� ��ҵǰOPT/��ǩ��ѯ �� ���ѧ����֤' }
 ];
 
 const navbar = document.getElementById('navbar');
@@ -438,7 +438,7 @@ function renderCountrySwitcher() {
   const container = document.getElementById("heroCountrySwitcher");
   const desktopNav = document.getElementById("desktopNav");
   if (!container) return;
-  container.innerHTML = '<p>选择目标<br/>国家/地区</p>' + countryList
+  container.innerHTML = '<p>ѡ��Ŀ��<br/>����/����</p>' + countryList
     .map((c) => {
       const isActive = c.code === activeCountry;
       return `<button class="country-chip${isActive ? " active" : ""}" data-country="${c.code}">
@@ -467,7 +467,7 @@ function renderProgram() {
 
   const badgeEl = document.getElementById("programCountryBadge");
   badgeEl.querySelector(".p-code").textContent = c.code;
-  badgeEl.querySelector(".p-title").textContent = c.name + " · 智领名校计划";
+  badgeEl.querySelector(".p-title").textContent = c.name + " �� ������У�ƻ�";
 
   document.getElementById("programLevel").textContent = p.level;
   document.getElementById("programDuration").textContent = p.duration;
@@ -477,24 +477,24 @@ function renderProgram() {
 
   // Stats icon mapping
   const statIconMap = {
-    院校: '<svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v8M16 2v8"/><circle cx="12" cy="15" r="2"/></svg>',
-    排名: '<svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 6 9 6 9z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 18 9 18 9z"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/><line x1="9" y1="14" x2="10" y2="14"/></svg>',
-    战绩: '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
-    服务: '<svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
-    工签: '<svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>',
-    录取: '<svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
-    就业: '<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
-    层次: '<svg viewBox="0 0 24 24"><path d="M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/><path d="M22 10.5 12 16l-3-1.7"/><path d="M17 14l5 5-5 5"/></svg>',
-    申请: '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>',
-    通过: '<svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>',
-    数量: '<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
-    年限: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+    ԺУ: '<svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v8M16 2v8"/><circle cx="12" cy="15" r="2"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 6 9 6 9z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C17 4 18 9 18 9z"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/><line x1="9" y1="14" x2="10" y2="14"/></svg>',
+    ս��: '<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
+    ��ǩ: '<svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>',
+    ¼ȡ: '<svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+    ��ҵ: '<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+    ���: '<svg viewBox="0 0 24 24"><path d="M22 10.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9"/><path d="M22 10.5 12 16l-3-1.7"/><path d="M17 14l5 5-5 5"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>',
+    ͨ��: '<svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
     TOP: '<svg viewBox="0 0 24 24"><path d="m19 21-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>',
-    合作: '<svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-    覆盖: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
-    学生: '<svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
-    省份: '<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-    大学: '<svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v8M16 2v8"/><circle cx="12" cy="15" r="2"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    ����: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+    ѧ��: '<svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    ʡ��: '<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    ��ѧ: '<svg viewBox="0 0 24 24"><rect x="3" y="2" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v8M16 2v8"/><circle cx="12" cy="15" r="2"/></svg>',
     default: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>',
   };
   function getStatIcon(label) {

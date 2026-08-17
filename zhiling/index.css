@@ -28,23 +28,23 @@
   --primary: #316bff;
   --primary-dark: #204bd9;
 
-  /* å‰æ™¯è‰²ï¼šä¿æŒç™½è‰² */
+  /* Ç°¾°É«£º±£³Ö°×É« */
   --primary-foreground: #ffffff;
 
-  /* é€æ˜åº¦å˜ä½“ï¼šåŸºäº #316bff è®¡ç®— */
-  /* 5% é€æ˜åº¦ */
+  /* Í¸Ã÷¶È±äÌå£º»ùÓÚ #316bff ¼ÆËã */
+  /* 5% Í¸Ã÷¶È */
   --primary-5: #316bff0d;
 
-  /* 10% é€æ˜åº¦ */
+  /* 10% Í¸Ã÷¶È */
   --primary-10: #316bff1a;
 
-  /* 20% é€æ˜åº¦ */
+  /* 20% Í¸Ã÷¶È */
   --primary-20: #316bff33;
 
-  /* 30% é€æ˜åº¦ */
+  /* 30% Í¸Ã÷¶È */
   --primary-30: #316bff4d;
 
-  /* 40% é€æ˜åº¦ */
+  /* 40% Í¸Ã÷¶È */
   --primary-40: #316bff66;
 
   --radius: 0.5rem;
@@ -647,7 +647,7 @@ button {
   gap: 0.5rem;
 }
 .program-highlights li::before {
-  content: "âœ“";
+  content: "?";
   color: var(--primary);
   font-weight: 700;
   font-size: 0.75rem;

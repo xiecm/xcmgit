@@ -754,21 +754,21 @@ function offerCard() {
     `;
   }).join('') + '</div>';
   grid.onclick = function (e) { const btn = e.target.closest('.card-slide'); if (btn) openModal(+btn.dataset.id); }
-  // new Swiper($("#main .cases-grid"), {
-  //   loop: true,
-  //   slidesPerView: 1,
-  //   spaceBetween: 25,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  //   navigation: {
-  //     nextEl: "#main .cases-container .swiper-button-next",
-  //     prevEl: "#main .cases-container .swiper-button-prev",
-  //   },
-  //   freeMode: false,
-  //   observer: true, //修改swiper自己或子元素时，自动初始化swiper
-  //   observeParents: true, //修改swiper的父元素时，自动初始化swiper
-  // });
+  new Swiper($("#main .cases-grid"), {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 25,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: "#main .cases-container .swiper-button-next",
+      prevEl: "#main .cases-container .swiper-button-prev",
+    },
+    freeMode: false,
+    observer: true, //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true, //修改swiper的父元素时，自动初始化swiper
+  });
 }
 
 const sectionIcons = {

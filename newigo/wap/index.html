@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>首页改版</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="https://m.igo.cn/public/js/ready-640.js"></script>
+  <script type="text/javascript" src="https://m.igo.cn/public/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="https://m.igo.cn/public/js/swiper.min.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <!-- 顶部栏 -->
+    <header class="header">
+      <div class="header-left">
+        <a class="logo">
+          <i class="icon icon_logo"></i>
+        </a>
+      </div>
+      <a href="tel:400-618-0271" class="tel">
+        <i class="icon icon_phone"></i>
+        <span>400-618-0271</span>
+      </a>
+      <div class="header-right">
+        <i class="icon icon_search"></i>
+        <i class="icon icon_menu"></i>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- 导航标签 -->
+      <nav class="tabs">
+        <a href="javascript:;" class="tab">发现</a>
+        <a href="javascript:;" class="tab active">首页</a>
+      </nav>
+
+      <!-- 快捷入口卡片 -->
+      <section class="quick-entry">
+        <a href="javascript:;" class="entry-card entry-schools">
+          <i class="icon icon_schools"></i>
+          <span class="entry-name">查院校</span>
+        </a>
+        <a href="javascript:;" class="entry-card entry-majors">
+          <i class="icon icon_majors"></i>
+          <span class="entry-name">选专业</span>
+        </a>
+        <a href="javascript:;" class="entry-card entry-cases">
+          <i class="icon icon_cases"></i>
+          <span class="entry-name">找案例</span>
+        </a>
+        <a href="javascript:;" class="entry-card entry-visits">
+          <i class="icon icon_visits"></i>
+          <span class="entry-name">探校区</span>
+        </a>
+      </section>
+
+      <!-- Banner 轮播 -->
+      <section class="banner">
+        <div class="banner-slider">
+          <a class="banner-slide" style="background-image: url(banner.png);">
+          </a>
+        </div>
+        <div class="banner-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- 功能入口 -->
+      <section class="func-grid">
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_rank"></i>
+          <span>大学排名</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_live"></i>
+          <span>直播活动</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_profile"></i>
+          <span>背景提升</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_teachers"></i>
+          <span>顾问师资</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_about"></i>
+          <span>了解新通</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_smart"></i>
+          <span>智能选校</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_fee"></i>
+          <span>费用计算</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_gpa"></i>
+          <span>GPA换算</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_ielts"></i>
+          <span>托雅测试</span>
+        </a>
+        <a href="javascript:;" class="func-item">
+          <i class="icon icon_career"></i>
+          <span>职业测评</span>
+        </a>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // 简单初始化 banner 轮播（如需真实滑动可接入 Swiper）
+    $(function () {
+      // 预留：new Swiper('.banner-slider', { ... });
+    });
+  </script>
+</body>
+
+</html>
